@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+
+sv xil_defaultlib  \
+"../../../../AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/binMultiplexer_PL.sv" \
+"../../../../AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/edgeDetect.sv" \
+"../../../../../../Downloads/myHWCorrelator_Arty_new/myHWCorrelator_Arty.srcs/sources_1/new/myHWCorrelator_PL_top.sv" \
+"../../../../AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv" \
+"../../../../AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv" \
+"../../../../AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/streamtoFIFO.sv" \
+"../../../../AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv" \
+"../../../../../../Downloads/myHWCorrelator_Arty_new/myHWCorrelator_Arty.srcs/sim_1/new/myHWCorrelator_PL_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

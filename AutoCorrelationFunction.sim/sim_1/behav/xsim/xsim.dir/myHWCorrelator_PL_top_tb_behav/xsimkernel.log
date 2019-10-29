@@ -1,0 +1,7 @@
+Running: xsim.dir/myHWCorrelator_PL_top_tb_behav/xsimk -simmode gui -wdb myHWCorrelator_PL_top_tb_behav.wdb -simrunnum 0 -socket 49441
+Design successfully loaded
+Design Loading Memory Usage: 56760 KB (Peak: 56760 KB)
+Design Loading CPU Usage: 100 ms
+Simulation completed
+Simulation Memory Usage: 127828 KB (Peak: 196028 KB)
+Simulation CPU Usage: 530 ms
