@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="10433132296fs"></ZoomEndTime>
-      <Cursor1Time time="21580000000fs"></Cursor1Time>
+      <ZoomEndTime time="16361531792fs"></ZoomEndTime>
+      <Cursor1Time time="21690000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="199"></NameColumnWidth>
-      <ValueColumnWidth column_width="153"></ValueColumnWidth>
+      <NameColumnWidth column_width="208"></NameColumnWidth>
+      <ValueColumnWidth column_width="119"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="14" />
    <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/s00_axi_aclk">
       <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
       <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
@@ -36,53 +36,37 @@
       <obj_property name="ElementShortName">CH1</obj_property>
       <obj_property name="ObjectShortName">CH1</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/maxCnt">
-      <obj_property name="ElementShortName">maxCnt[34:0]</obj_property>
-      <obj_property name="ObjectShortName">maxCnt[34:0]</obj_property>
+   <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/s00_axi_awaddr">
+      <obj_property name="ElementShortName">s00_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awaddr[31:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/CE">
+   <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/s00_axi_wdata">
+      <obj_property name="ElementShortName">s00_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/CE">
       <obj_property name="ElementShortName">CE</obj_property>
       <obj_property name="ObjectShortName">CE</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/initTx">
+   <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/initTx">
       <obj_property name="ElementShortName">initTx</obj_property>
       <obj_property name="ObjectShortName">initTx</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/maxCnt">
+      <obj_property name="ElementShortName">maxCnt[34:0]</obj_property>
+      <obj_property name="ObjectShortName">maxCnt[34:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/s00_axi_araddr">
       <obj_property name="ElementShortName">s00_axi_araddr[31:0]</obj_property>
       <obj_property name="ObjectShortName">s00_axi_araddr[31:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/s00_axi_arvalid">
-      <obj_property name="ElementShortName">s00_axi_arvalid</obj_property>
-      <obj_property name="ObjectShortName">s00_axi_arvalid</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/s00_axi_arready">
-      <obj_property name="ElementShortName">s00_axi_arready</obj_property>
-      <obj_property name="ObjectShortName">s00_axi_arready</obj_property>
-   </wvobject>
    <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/s00_axi_rdata">
       <obj_property name="ElementShortName">s00_axi_rdata[31:0]</obj_property>
       <obj_property name="ObjectShortName">s00_axi_rdata[31:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/s00_axi_rvalid">
-      <obj_property name="ElementShortName">s00_axi_rvalid</obj_property>
-      <obj_property name="ObjectShortName">s00_axi_rvalid</obj_property>
-   </wvobject>
    <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/acfAddr">
       <obj_property name="ElementShortName">acfAddr[7:0]</obj_property>
       <obj_property name="ObjectShortName">acfAddr[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/acfWrData">
-      <obj_property name="ElementShortName">acfWrData[63:0]</obj_property>
-      <obj_property name="ObjectShortName">acfWrData[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/acfRdData">
-      <obj_property name="ElementShortName">acfRdData[63:0]</obj_property>
-      <obj_property name="ObjectShortName">acfRdData[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount">
-      <obj_property name="ElementShortName">dataCount[31:0]</obj_property>
-      <obj_property name="ObjectShortName">dataCount[31:0]</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/acfDataComplete">
       <obj_property name="ElementShortName">acfDataComplete</obj_property>

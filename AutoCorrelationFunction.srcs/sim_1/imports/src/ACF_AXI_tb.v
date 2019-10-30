@@ -79,20 +79,21 @@ end
 
 //main simulation block
 initial begin
-    CE = 1'b0;
-    CH1 = 1'b0;
-    initTx = 1'b0;
-    presentTime = 0;
+    //CE = 1'b0;
+    //CH1 = 1'b0;
+    //initTx = 1'b0;
+    
     maxCnt = 10000;
     @(negedge rst);
         #205
-        CE = 1'b1;
+        axi_write(32'd0, 32'd10000); // write maxCnt = 10000 to ACF IP
+        axi_write(32'd1, 32'd1); // write CE = 1 to ACF IP
         #10
-        CH1 =1'b1;
+        CH1 = 1'b1;
         #10
-        CH1  = 1'b0;
+        CH1 = 1'b0;
         #500
-        presentTime = 1;
+        
         repeat(4) begin
         #100
         CH1 = 1'b1;
@@ -100,44 +101,42 @@ initial begin
         CH1 = 1'b0;
         end
         #500
-        presentTime = 3;
+        
         #100
         CH1 = 1'b1;
         #10
         CH1 = 1'b0;
         #500
-        presentTime = 7;
+        
         #100
         CH1 = 1'b1;
         #10
         CH1 = 1'b0;
         #600
-        presentTime = 8;
+        
         #10
         CH1 = 1'b1;
         #10
         CH1 = 1'b0;
         #500
-        presentTime =9;
+        
         CH1= 1'b1;
         #10
         CH1 = 1'b0;
         #500
-        presentTime = 10;
+        
         #10
         CH1 = 1'b1;
         #10
         CH1 = 1'b0;
-        
         #500
-        presentTime = 11;
+        
         CH1=1'b1;
         #10
         CH1=1'b0;
         #1000
-        initTx = 1'b1;
-        #10
-        initTx = 1'b0;
+        axi_write(32'd2, 32'd1); // write initTx = 1
+        axi_write(32'd2, 32'd0); // write initTx = 0
         #14000
         
         // Now that the ACF is finished being calculated, start reading it
@@ -164,9 +163,6 @@ end
 	) DUT (
 		.smpl_clk(smpl_clk),
 		.CH1(CH1),
-		.maxCnt(maxCnt),
-		.CE(CE),
-		.initTx(initTx),
 		.s00_axi_aclk(sys_clk),
 		.s00_axi_aresetn(~rst),
 
@@ -194,5 +190,60 @@ end
 		.s00_axi_rvalid(read_data_valid),
 		.s00_axi_rready(read_data_ready)
 	);
+	
+task axi_write;
+	input [31:0] addr;
+	input [31:0] data;
+	begin
+		#3 write_addr <= addr;	//Put write address on bus
+		write_data <= data;	//put write data on bus
+		write_addr_valid <= 1'b1;	//indicate address is valid
+		write_data_valid <= 1'b1;	//indicate data is valid
+		write_resp_ready <= 1'b1;	//indicate ready for a response
+		write_strb <= 4'hF;		//writing all 4 bytes
+
+		//wait for one slave ready signal or the other
+		wait(write_data_ready || write_addr_ready);
+			
+		@(posedge sys_clk); //one or both signals and a positive edge
+		if(write_data_ready&&write_addr_ready)//received both ready signals
+		begin
+			write_addr_valid<=0;
+			write_data_valid<=0;
+		end
+		else    //wait for the other signal and a positive edge
+		begin
+			if(write_data_ready)    //case data handshake completed
+			begin
+				write_data_valid<=0;
+				wait(write_addr_ready); //wait for address address ready
+			end
+            		else if(write_addr_ready)   //case address handshake completed
+            		begin
+				write_addr_valid<=0;
+                		wait(write_data_ready); //wait for data ready
+            		end 
+			@ (posedge sys_clk);// complete the second handshake
+			write_addr_valid<=0; //make sure both valid signals are deasserted
+			write_data_valid<=0;
+		end
+            
+		//both handshakes have occured
+		//deassert strobe
+		write_strb<=0;
+
+		//wait for valid response
+		wait(write_resp_valid);
+		
+		//both handshake signals and rising edge
+		@(posedge sys_clk);
+
+		//deassert ready for response
+		write_resp_ready<=0;
+
+
+		//end of write transaction
+	end
+	endtask;
 	
 endmodule

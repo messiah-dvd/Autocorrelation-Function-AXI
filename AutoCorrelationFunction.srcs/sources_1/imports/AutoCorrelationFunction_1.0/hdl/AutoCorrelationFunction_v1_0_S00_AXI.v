@@ -20,10 +20,8 @@
 	)
 	(
 		// Users to add ports here
-        input wire initTx,
-        input wire wrEn,
-        input wire [63:0] acfEl,
-        input wire cntFinished,
+        input wire smpl_clk,
+        input wire CH1,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -107,14 +105,14 @@
 	// ADDR_LSB = 2 for 32 bits (n downto 2)
 	// ADDR_LSB = 3 for 64 bits (n downto 3)
 	localparam integer ADDR_LSB = (C_S_AXI_DATA_WIDTH/32) + 1;
-	localparam integer OPT_MEM_ADDR_BITS = 1;
+	localparam integer OPT_MEM_ADDR_BITS = 2;
 	//----------------------------------------------
 	//-- Signals for user logic register space example
 	//------------------------------------------------
 	//-- Number of Slave Registers 4
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg0;
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg1;
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg2;
+	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg0; // maxCnt
+	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg1; // CE
+	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg2; // initTx
 	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg3;
 	wire	 slv_reg_rden;
 	wire	 slv_reg_wren;
@@ -222,7 +220,60 @@
 	// These registers are cleared when reset (active low) is applied.
 	// Slave register write enable is asserted when valid address and data are available
 	// and the slave is ready to accept the write address and write data.
-	assign slv_reg_wren = axi_wready && S_AXI_WVALID && axi_awready && S_AXI_AWVALID;  
+	assign slv_reg_wren = axi_wready && S_AXI_WVALID && axi_awready && S_AXI_AWVALID;
+
+	always @( posedge S_AXI_ACLK )
+	begin
+	  if ( S_AXI_ARESETN == 1'b0 )
+	    begin
+	      slv_reg0 <= 0;
+	      slv_reg1 <= 0;
+	      slv_reg2 <= 0;
+	      slv_reg3 <= 0;
+	    end 
+	  else begin
+	    if (slv_reg_wren)
+	      begin
+	        //case ( axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
+	        case ( axi_awaddr[OPT_MEM_ADDR_BITS:0] )
+	          2'h0:
+	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
+	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
+	                // Respective byte enables are asserted as per write strobes 
+	                // Slave register 0
+	                slv_reg0[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+	              end  
+	          2'h1:
+	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
+	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
+	                // Respective byte enables are asserted as per write strobes 
+	                // Slave register 1
+	                slv_reg1[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+	              end  
+	          2'h2:
+	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
+	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
+	                // Respective byte enables are asserted as per write strobes 
+	                // Slave register 2
+	                slv_reg2[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+	              end  
+	          2'h3:
+	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
+	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
+	                // Respective byte enables are asserted as per write strobes 
+	                // Slave register 3
+	                slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+	              end  
+	          default : begin
+	                      slv_reg0 <= slv_reg0;
+	                      slv_reg1 <= slv_reg1;
+	                      slv_reg2 <= slv_reg2;
+	                      slv_reg3 <= slv_reg3;
+	                    end
+	        endcase
+	      end
+	  end
+	end
 
 	// Implement write response logic generation
 	// The write response and response valid signals are asserted by the slave 
@@ -395,12 +446,34 @@
     always @(posedge wrEn) begin
         acfWrData <= acfEl;
         dataCount <= dataCount + 1;
-        //acfWrEn <= 1;
     end
     
-    always @(negedge wrEn) begin
-        //acfWrEn <= 0;
-    end
+    wire CE, initTx, wrEn, cntFinished;
+    wire [CNT_SIZE-1:0] maxCnt;
+    wire [63:0] acfEl;
+    assign maxCnt[31:0] = slv_reg0;
+    assign maxCnt[CNT_SIZE-1:32] = slv_reg1[31 -: CNT_SIZE-32];
+    assign CE = slv_reg1[0];
+    assign initTx = slv_reg2[0];
+    
+    myHWCorrelator_PL_top #(
+        .PRECNTSHIFT(PRECNTSHIFT),
+        .MIN_NI_WIDTH(MIN_NI_WIDTH),
+        .NIBUSWIDTH(NIBUSWIDTH),
+        .NUM_CHANS(NUM_CHANS),
+        .S_BLOCKS(S_BLOCKS)
+    ) acf (
+        .sys_clk(S_AXI_ACLK),     //system clock 128 MHz design
+        .smpl_clk(smpl_clk),        //sample clock 256 MHz design
+        .rst(~S_AXI_ARESETN),      //reset signal
+        .CH1(CH1),                  //async input signal
+        .maxCnt(maxCnt),            //maximum counter variable
+        .CE(CE),                    //clock enable signal
+        .initTx(initTx),            //signal to initialize print out to FIFO
+        .wrEn(wrEn),                //FIFO write enable
+        .cntFinished(cntFinished),  //flag that elapsed time has been reached
+        .acfEl(acfEl)               //acf element to print,
+    );
 	//User logic ends
 
 	endmodule

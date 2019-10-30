@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelationFunction_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelationFunction_v1_0_S00_AXI
+WARNING: [VRFC 10-3380] identifier 'acfDataComplete' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:327]
+WARNING: [VRFC 10-3380] identifier 'acfRdData' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:387]
+WARNING: [VRFC 10-3380] identifier 'acfDataComplete' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:402]
+WARNING: [VRFC 10-3380] identifier 'initTx' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:443]
+WARNING: [VRFC 10-3380] identifier 'wrEn' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:446]
+WARNING: [VRFC 10-3380] identifier 'acfEl' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:447]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/new/single_port_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_port_bram

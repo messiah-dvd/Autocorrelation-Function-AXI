@@ -1,6 +1,5 @@
 
 `timescale 1 ns / 1 ps
-
 	module AutoCorrelationFunction_v1_0 #
 	(
 		// Users to add parameters here
@@ -22,9 +21,6 @@
 		// Users to add ports here
         input wire smpl_clk,
         input wire CH1,
-        input wire [CNT_SIZE-1:0] maxCnt,
-        input wire CE,
-        input wire initTx,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -52,11 +48,6 @@
 		output wire  s00_axi_rvalid,
 		input wire  s00_axi_rready
 	);
-	localparam CNT_SIZE = 35;
-	
-    wire wrEn;
-    wire cntFinished;
-    wire [63:0] acfEl; // 8 bytes -- one ACF element at a  time
 
 // Instantiation of Axi Bus Interface S00_AXI
 	AutoCorrelationFunction_v1_0_S00_AXI # ( 
@@ -90,32 +81,12 @@
 		.S_AXI_RRESP(s00_axi_rresp),
 		.S_AXI_RVALID(s00_axi_rvalid),
 		.S_AXI_RREADY(s00_axi_rready),
-		.initTx(initTx),
-		.wrEn(wrEn),
-		.acfEl(acfEl),
-		.cntFinished(cntFinished)
+		.smpl_clk(smpl_clk),
+		.CH1(CH1)
 	);
 
 	// Add user logic here
 	
-    myHWCorrelator_PL_top #(
-        .PRECNTSHIFT(PRECNTSHIFT),
-        .MIN_NI_WIDTH(MIN_NI_WIDTH),
-        .NIBUSWIDTH(NIBUSWIDTH),
-        .NUM_CHANS(NUM_CHANS),
-        .S_BLOCKS(S_BLOCKS)
-    ) acf (
-        .sys_clk(s00_axi_aclk),     //system clock 128 MHz design
-        .smpl_clk(smpl_clk),        //sample clock 256 MHz design
-        .rst(~s00_axi_aresetn),      //reset signal
-        .CH1(CH1),                  //async input signal
-        .maxCnt(maxCnt),            //maximum counter variable
-        .CE(CE),                    //clock enable signal
-        .initTx(initTx),            //signal to initialize print out to FIFO
-        .wrEn(wrEn),                //FIFO write enable
-        .cntFinished(cntFinished),  //flag that elapsed time has been reached
-        .acfEl(acfEl)               //acf element to print,
-    );
 	// User logic ends
 
 	endmodule

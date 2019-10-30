@@ -22,14 +22,14 @@ WARNING: Behavioral models for independent clock FIFO configurations do not mode
 WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
 WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
 WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-Block Memory Generator module ACF_AXI_tb.DUT.acf.genblk2[0].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module ACF_AXI_tb.DUT.acf.genblk2[1].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module ACF_AXI_tb.DUT.acf.genblk2[2].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module ACF_AXI_tb.DUT.acf.genblk2[3].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module ACF_AXI_tb.DUT.acf.genblk2[4].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module ACF_AXI_tb.DUT.acf.genblk2[5].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module ACF_AXI_tb.DUT.acf.genblk2[6].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module ACF_AXI_tb.DUT.acf.genblk2[7].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module ACF_AXI_tb.DUT.AutoCorrelationFunction_v1_0_S00_AXI_inst.acf.genblk2[0].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module ACF_AXI_tb.DUT.AutoCorrelationFunction_v1_0_S00_AXI_inst.acf.genblk2[1].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module ACF_AXI_tb.DUT.AutoCorrelationFunction_v1_0_S00_AXI_inst.acf.genblk2[2].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module ACF_AXI_tb.DUT.AutoCorrelationFunction_v1_0_S00_AXI_inst.acf.genblk2[3].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module ACF_AXI_tb.DUT.AutoCorrelationFunction_v1_0_S00_AXI_inst.acf.genblk2[4].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module ACF_AXI_tb.DUT.AutoCorrelationFunction_v1_0_S00_AXI_inst.acf.genblk2[5].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module ACF_AXI_tb.DUT.AutoCorrelationFunction_v1_0_S00_AXI_inst.acf.genblk2[6].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module ACF_AXI_tb.DUT.AutoCorrelationFunction_v1_0_S00_AXI_inst.acf.genblk2[7].brams.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
 setting axi_arready
 setting axi_arready
 setting axi_arready
@@ -59,3 +59,75 @@ setting axi_arready
 setting axi_arready
 setting axi_arready
 setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+setting axi_arready
+$finish called at time : 21690 ns : File "/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sim_1/imports/src/ACF_AXI_tb.v" Line 151
