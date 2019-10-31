@@ -1,0 +1,2025 @@
+
+*** Running vivado
+    with args -log AutoCorrelationFunction_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AutoCorrelationFunction_v1_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/feliks/.Xilinx/Vivado/Vivado_init.tcl'
+source AutoCorrelationFunction_v1_0.tcl -notrace
+WARNING: [Board 49-91] Board repository path '/opt/Xilinx/Vivado/2018.2/vivado-boards/new/board_files' does not exist, it will not be used to search board files.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/feliks/Vivado/ip_repo/myip_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/feliks/Vivado/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top AutoCorrelationFunction_v1_0 -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20041 
+WARNING: [Synth 8-6901] identifier 'acfDataComplete' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:327]
+WARNING: [Synth 8-6901] identifier 'acfRdData' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:387]
+WARNING: [Synth 8-6901] identifier 'acfDataComplete' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:402]
+WARNING: [Synth 8-6901] identifier 'initTx' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:444]
+WARNING: [Synth 8-6901] identifier 'wrEn' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:447]
+WARNING: [Synth 8-6901] identifier 'acfEl' is used before its declaration [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:453]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1720.543 ; gain = 158.621 ; free physical = 5118 ; free virtual = 11033
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AutoCorrelationFunction_v1_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0.v:3]
+	Parameter CNT_SIZE bound to: 35 - type: integer 
+	Parameter PRECNTSHIFT bound to: 6 - type: integer 
+	Parameter MIN_NI_WIDTH bound to: 3 - type: integer 
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter S_BLOCKS bound to: 20 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AutoCorrelationFunction_v1_0_S00_AXI' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:4]
+	Parameter CNT_SIZE bound to: 35 - type: integer 
+	Parameter PRECNTSHIFT bound to: 6 - type: integer 
+	Parameter MIN_NI_WIDTH bound to: 3 - type: integer 
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter S_BLOCKS bound to: 20 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-251] setting axi_arready [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:329]
+INFO: [Synth 8-6157] synthesizing module 'single_port_bram' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/new/single_port_bram.v:23]
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 241 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'single_port_bram' (1#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/new/single_port_bram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'myHWCorrelator_PL_top' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:23]
+	Parameter PRECNTSHIFT bound to: 6 - type: integer 
+	Parameter MIN_NI_WIDTH bound to: 3 - type: integer 
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter S_BLOCKS bound to: 20 - type: integer 
+	Parameter CNT_SIZE bound to: 35 - type: integer 
+	Parameter wrDelay bound to: 17 - type: integer 
+	Parameter rdDelay bound to: 0 - type: integer 
+	Parameter muxDelay bound to: 0 - type: integer 
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:150]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:150]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:150]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:150]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:150]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:150]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 3 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 35 - type: integer 
+	Parameter BLOCK_HALF bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 35 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-20008-megatron/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (2#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-20008-megatron/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL' (3#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 3 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 35 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized0' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized1' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 4 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 34 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 34 - type: integer 
+WARNING: [Synth 8-689] width (34) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized0' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized1' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized2' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 5 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 33 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized1' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 33 - type: integer 
+WARNING: [Synth 8-689] width (33) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized1' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized2' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized3' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 6 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 32 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized2' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 32 - type: integer 
+WARNING: [Synth 8-689] width (32) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized2' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized3' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized4' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 7 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 31 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized3' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 31 - type: integer 
+WARNING: [Synth 8-689] width (31) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized3' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized4' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized5' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 30 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized4' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 30 - type: integer 
+WARNING: [Synth 8-689] width (30) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized4' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized5' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized6' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 9 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 29 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized5' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 29 - type: integer 
+WARNING: [Synth 8-689] width (29) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized5' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized6' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized7' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 10 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 28 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized6' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 28 - type: integer 
+WARNING: [Synth 8-689] width (28) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized6' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized7' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized8' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 11 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 27 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized7' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 27 - type: integer 
+WARNING: [Synth 8-689] width (27) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized7' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized8' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized9' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 12 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 26 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized8' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 26 - type: integer 
+WARNING: [Synth 8-689] width (26) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized8' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized9' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized10' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 13 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 25 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized9' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 25 - type: integer 
+WARNING: [Synth 8-689] width (25) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized9' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized10' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized11' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 14 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 24 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized10' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 24 - type: integer 
+WARNING: [Synth 8-689] width (24) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized10' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized11' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized12' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 15 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 23 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized11' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 23 - type: integer 
+WARNING: [Synth 8-689] width (23) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized11' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized12' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized13' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 16 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 22 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized12' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 22 - type: integer 
+WARNING: [Synth 8-689] width (22) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized12' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized13' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 39 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 40 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized14' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 17 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 21 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized13' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 21 - type: integer 
+WARNING: [Synth 8-689] width (21) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized13' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized14' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+WARNING: [Synth 8-324] index 35 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 36 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 37 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+WARNING: [Synth 8-324] index 38 out of range [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:166]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized15' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 18 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 20 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized14' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 20 - type: integer 
+WARNING: [Synth 8-689] width (20) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized14' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized15' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized16' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 19 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 19 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized15' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 19 - type: integer 
+WARNING: [Synth 8-689] width (19) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized15' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized16' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized17' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 20 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 18 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized16' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 18 - type: integer 
+WARNING: [Synth 8-689] width (18) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized16' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized17' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized18' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 21 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 17 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized17' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 17 - type: integer 
+WARNING: [Synth 8-689] width (17) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized17' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized18' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized19' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 22 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 16 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized18' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 16 - type: integer 
+WARNING: [Synth 8-689] width (16) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized18' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized19' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized20' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NI_WIDTH bound to: 23 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter CNT_SIZE bound to: 15 - type: integer 
+	Parameter BLOCK_HALF bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized19' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 15 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized19' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized20' (4#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/niBlock_s_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-20008-megatron/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (5#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-20008-megatron/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'brams' of module 'blk_mem_gen_0' has 11 connections declared, but only 9 given [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:186]
+WARNING: [Synth 8-7023] instance 'brams' of module 'blk_mem_gen_0' has 11 connections declared, but only 9 given [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:186]
+WARNING: [Synth 8-7023] instance 'brams' of module 'blk_mem_gen_0' has 11 connections declared, but only 9 given [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:186]
+WARNING: [Synth 8-7023] instance 'brams' of module 'blk_mem_gen_0' has 11 connections declared, but only 9 given [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:186]
+WARNING: [Synth 8-7023] instance 'brams' of module 'blk_mem_gen_0' has 11 connections declared, but only 9 given [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:186]
+WARNING: [Synth 8-7023] instance 'brams' of module 'blk_mem_gen_0' has 11 connections declared, but only 9 given [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:186]
+WARNING: [Synth 8-7023] instance 'brams' of module 'blk_mem_gen_0' has 11 connections declared, but only 9 given [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:186]
+WARNING: [Synth 8-7023] instance 'brams' of module 'blk_mem_gen_0' has 11 connections declared, but only 9 given [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:186]
+INFO: [Synth 8-6157] synthesizing module 'myMultAdder' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:23]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+	Parameter ADD_LATENCY bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-20008-megatron/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (6#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-20008-megatron/realtime/mult_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (24) of port connection 'A' does not match port width (23) of module 'mult_gen_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:61]
+WARNING: [Synth 8-689] width (24) of port connection 'B' does not match port width (23) of module 'mult_gen_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:62]
+INFO: [Synth 8-6155] done synthesizing module 'myMultAdder' (7#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized20' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+	Parameter CNTSIZE bound to: 1 - type: integer 
+WARNING: [Synth 8-689] width (1) of port connection 'dout' does not match port width (35) of module 'fifo_generator_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized20' (7#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'streamToFIFO' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/streamtoFIFO.sv:22]
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter S_BLOCKS bound to: 20 - type: integer 
+	Parameter latDelay bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'streamToFIFO' (8#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/streamtoFIFO.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'binMultiplexer_PL' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/binMultiplexer_PL.sv:23]
+	Parameter NIBUSWIDTH bound to: 23 - type: integer 
+	Parameter NUM_CHANS bound to: 8 - type: integer 
+	Parameter S_BLOCKS bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'binMultiplexer_PL' (9#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/binMultiplexer_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'edge_Detect' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/edgeDetect.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'edge_Detect' (10#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/edgeDetect.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_0' [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-20008-megatron/realtime/c_counter_binary_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_0' (11#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-20008-megatron/realtime/c_counter_binary_0_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element blckAddr_d_reg was removed.  [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:71]
+WARNING: [Synth 8-6014] Unused sequential element blckAddr_q_reg was removed.  [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:64]
+INFO: [Synth 8-6155] done synthesizing module 'myHWCorrelator_PL_top' (12#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/new/myHWCorrelator_PL_top.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:232]
+INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelationFunction_v1_0_S00_AXI' (13#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelationFunction_v1_0' (14#1) [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0.v:3]
+WARNING: [Synth 8-3331] design myMultAdder has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder has unconnected port B[23]
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized20 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized19 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized18 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized16 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized14 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized12 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized10 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized8 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized6 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized4 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized2 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL has unconnected port CE
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1827.449 ; gain = 265.527 ; free physical = 5078 ; free virtual = 10995
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1845.262 ; gain = 283.340 ; free physical = 5092 ; free virtual = 11008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1845.262 ; gain = 283.340 ; free physical = 5092 ; free virtual = 11008
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/mainTimer'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/mainTimer'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[0].brams'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[0].brams'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[1].brams'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[1].brams'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[2].brams'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[2].brams'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[3].brams'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[3].brams'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[4].brams'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[4].brams'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[5].brams'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[5].brams'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[6].brams'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[6].brams'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[7].brams'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk2[7].brams'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[0].multAdd/mult'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[0].multAdd/mult'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[1].multAdd/mult'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[1].multAdd/mult'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[2].multAdd/mult'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[2].multAdd/mult'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[3].multAdd/mult'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[3].multAdd/mult'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[4].multAdd/mult'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[4].multAdd/mult'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[5].multAdd/mult'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[5].multAdd/mult'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[6].multAdd/mult'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[6].multAdd/mult'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[7].multAdd/mult'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[7].multAdd/mult'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/photonCounter/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/photonCounter/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[0].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[0].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[1].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[1].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[2].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[2].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[3].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[3].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[4].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[4].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[5].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[5].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[6].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[6].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[7].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[7].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[8].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[8].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[9].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[9].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[10].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[10].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[11].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[11].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[12].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[12].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[13].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[13].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[14].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[14].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[15].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[15].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[16].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[16].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[17].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[17].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[18].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[18].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[19].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[19].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[20].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[20].niblock/tdc_pl/smallFIFO'
+Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[21].niblock/tdc_pl/smallFIFO'
+Finished Parsing XDC File [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk1[21].niblock/tdc_pl/smallFIFO'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2064.824 ; gain = 0.000 ; free physical = 4902 ; free virtual = 10818
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2064.824 ; gain = 0.000 ; free physical = 4902 ; free virtual = 10818
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 5062 ; free virtual = 10979
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 5062 ; free virtual = 10979
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/mainTimer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk2[0].brams . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk2[1].brams . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk2[2].brams . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk2[3].brams . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk2[4].brams . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk2[5].brams . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk2[6].brams . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk2[7].brams . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk3[0].multAdd /mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk3[1].multAdd /mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk3[2].multAdd /mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk3[3].multAdd /mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk3[4].multAdd /mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk3[5].multAdd /mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk3[6].multAdd /mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk3[7].multAdd /mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/photonCounter/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[0].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[1].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[2].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[3].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[4].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[5].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[6].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[7].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[8].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[9].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[10].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[11].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[12].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[13].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[14].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[15].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[16].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[17].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[18].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[19].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[20].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/\genblk1[21].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 5059 ; free virtual = 10976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 5003 ; free virtual = 10923
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------------------------+------------+----------+
+|      |RTL Partition                             |Replication |Instances |
++------+------------------------------------------+------------+----------+
+|1     |myHWCorrelator_PL_top__GB0                |           1|     30072|
+|2     |myHWCorrelator_PL_top__GB1                |           1|     10344|
+|3     |myHWCorrelator_PL_top__GB2                |           1|     26550|
+|4     |myHWCorrelator_PL_top__GB3                |           1|     19998|
+|5     |myHWCorrelator_PL_top__GB4                |           1|     22267|
+|6     |AutoCorrelationFunction_v1_0_S00_AXI__GC0 |           1|       827|
++------+------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 8     
+	   3 Input     35 Bit       Adders := 2     
+	   3 Input     34 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   3 Input     30 Bit       Adders := 1     
+	   3 Input     29 Bit       Adders := 1     
+	   3 Input     28 Bit       Adders := 1     
+	   3 Input     27 Bit       Adders := 1     
+	   3 Input     26 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   3 Input     22 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     19 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   3 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
+	   3 Input      1 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 100   
+	               35 Bit    Registers := 18    
+	               34 Bit    Registers := 9     
+	               33 Bit    Registers := 9     
+	               32 Bit    Registers := 15    
+	               31 Bit    Registers := 9     
+	               30 Bit    Registers := 9     
+	               29 Bit    Registers := 9     
+	               28 Bit    Registers := 9     
+	               27 Bit    Registers := 9     
+	               26 Bit    Registers := 9     
+	               25 Bit    Registers := 9     
+	               24 Bit    Registers := 8     
+	               23 Bit    Registers := 456   
+	               22 Bit    Registers := 45    
+	               21 Bit    Registers := 42    
+	               20 Bit    Registers := 42    
+	               19 Bit    Registers := 42    
+	               18 Bit    Registers := 42    
+	               17 Bit    Registers := 42    
+	               16 Bit    Registers := 42    
+	               15 Bit    Registers := 42    
+	               14 Bit    Registers := 34    
+	               13 Bit    Registers := 34    
+	               12 Bit    Registers := 34    
+	               11 Bit    Registers := 34    
+	               10 Bit    Registers := 36    
+	                9 Bit    Registers := 34    
+	                8 Bit    Registers := 36    
+	                7 Bit    Registers := 34    
+	                6 Bit    Registers := 36    
+	                5 Bit    Registers := 38    
+	                4 Bit    Registers := 34    
+	                3 Bit    Registers := 70    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 210   
++---Multipliers : 
+	                 2x35  Multipliers := 2     
+	                 3x33  Multipliers := 1     
+	                 3x32  Multipliers := 1     
+	                 3x31  Multipliers := 1     
+	                 4x29  Multipliers := 1     
+	                 4x28  Multipliers := 1     
+	                 4x27  Multipliers := 1     
+	                 4x26  Multipliers := 1     
+	                 4x25  Multipliers := 1     
++---RAMs : 
+	              15K Bit         RAMs := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 3     
+	   4 Input     23 Bit        Muxes := 21    
+	   2 Input     23 Bit        Muxes := 27    
+	   2 Input     22 Bit        Muxes := 9     
+	   2 Input     21 Bit        Muxes := 9     
+	   2 Input     20 Bit        Muxes := 9     
+	   2 Input     19 Bit        Muxes := 9     
+	   2 Input     18 Bit        Muxes := 9     
+	   2 Input     17 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 9     
+	   2 Input     15 Bit        Muxes := 9     
+	   2 Input     14 Bit        Muxes := 9     
+	   2 Input     13 Bit        Muxes := 9     
+	   2 Input     12 Bit        Muxes := 9     
+	   2 Input     11 Bit        Muxes := 9     
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      9 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 10    
+	   2 Input      7 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 9     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 11    
+	   2 Input      4 Bit        Muxes := 10    
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 24    
+	   2 Input      1 Bit        Muxes := 128   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tdc_PL__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	               10 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 4x28  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               14 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module binMultiplexer_PL 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 18    
+	               22 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 18    
+Module tdc_PL__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	               11 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 4x27  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     25 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	               13 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 4x25  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     23 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               15 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	               12 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 4x26  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized12 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               16 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized14 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               18 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	                7 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 3x31  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	                8 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 3     
+Module tdc_PL__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     29 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	                9 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 4x29  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	                6 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 3x32  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	                5 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 3x33  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     34 Bit       Adders := 1     
++---Registers : 
+	               34 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               34 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	                4 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     35 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	                3 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 2x35  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               17 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     35 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 1     
+	               23 Bit    Registers := 18    
+	                3 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 2x35  Multipliers := 1     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               19 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized16 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               20 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized19 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 52    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module edge_Detect 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module streamToFIFO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 10    
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   6 Input      6 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 8     
+Module tdc_PL__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               21 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized18 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module niBlock_s_PL__parameterized19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 18    
+	               22 Bit    Registers := 34    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module tdc_PL__parameterized20 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module myMultAdder__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 11    
+Module myMultAdder__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 11    
+Module myMultAdder__xdcDup__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 11    
+Module myMultAdder__xdcDup__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 11    
+Module myMultAdder__xdcDup__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 11    
+Module myMultAdder__xdcDup__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 11    
+Module myMultAdder__xdcDup__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 11    
+Module myMultAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 11    
+Module myHWCorrelator_PL_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               22 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module single_port_bram 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---RAMs : 
+	              15K Bit         RAMs := 1     
+Module AutoCorrelationFunction_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_arprot[0]
+WARNING: [Synth 8-3936] Found unconnected internal register 'acf_data/o_data_reg' and it is trimmed from '64' to '32' bits. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/new/single_port_bram.v:38]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (AutoCorrelationFunction_v1_0_S00_AXI_insti_5/transmissionJustStarted_reg)
+INFO: [Synth 8-3886] merging instance 'AutoCorrelationFunction_v1_0_S00_AXI_insti_5/axi_rresp_reg[0]' (FDRE) to 'AutoCorrelationFunction_v1_0_S00_AXI_insti_5/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (AutoCorrelationFunction_v1_0_S00_AXI_insti_5/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'AutoCorrelationFunction_v1_0_S00_AXI_insti_5/axi_bresp_reg[0]' (FDRE) to 'AutoCorrelationFunction_v1_0_S00_AXI_insti_5/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (AutoCorrelationFunction_v1_0_S00_AXI_insti_5/\axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (AutoCorrelationFunction_v1_0_S00_AXI_insti_5/axi_rvalid_reg)
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized12 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized10 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized8 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized7 has unconnected port CE
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[17]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[18]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[19]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[20]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[21]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].niblock /\tdc_pl/presentTime_d_reg[22] )
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[18]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[19]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[20]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[21]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[22]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].niblock /\tdc_pl/presentTime_d_reg[23] )
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[19]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[20]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[21]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[22]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[23]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].niblock /\tdc_pl/presentTime_d_reg[24] )
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[20]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[21]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[22]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[23]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[24]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].niblock /\tdc_pl/presentTime_d_reg[25] )
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[21]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[22]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[23]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[24]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[25]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[9].niblock /\tdc_pl/presentTime_d_reg[26] )
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[22]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[23]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[24]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[25]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[26]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[8].niblock /\tdc_pl/presentTime_d_reg[27] )
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_q_reg[17]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_q_reg[18]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_q_reg[19]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_q_reg[20]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_q_reg[21]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/tdc_pl/presentTime_q_reg[22]' (FD) to 'genblk1[13].niblock/tdc_pl/presentTime_d_reg[22]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_q_reg[18]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_q_reg[19]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_q_reg[20]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_q_reg[21]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_q_reg[22]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/tdc_pl/presentTime_q_reg[23]' (FD) to 'genblk1[12].niblock/tdc_pl/presentTime_d_reg[23]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_q_reg[19]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_q_reg[20]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_q_reg[21]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_q_reg[22]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_q_reg[23]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/tdc_pl/presentTime_q_reg[24]' (FD) to 'genblk1[11].niblock/tdc_pl/presentTime_d_reg[24]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_q_reg[20]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_q_reg[21]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_q_reg[22]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_q_reg[23]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_q_reg[24]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/tdc_pl/presentTime_q_reg[25]' (FD) to 'genblk1[10].niblock/tdc_pl/presentTime_d_reg[25]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_q_reg[21]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_q_reg[22]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_q_reg[23]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_q_reg[24]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_q_reg[25]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/tdc_pl/presentTime_q_reg[26]' (FD) to 'genblk1[9].niblock/tdc_pl/presentTime_d_reg[26]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_q_reg[22]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_q_reg[23]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_q_reg[24]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_q_reg[25]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_q_reg[26]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/tdc_pl/presentTime_q_reg[27]' (FD) to 'genblk1[8].niblock/tdc_pl/presentTime_d_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[8].niblock /\shift_reg[0] )
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/shift_reg[1]' (FDE) to 'genblk1[10].niblock/shift_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].niblock /\shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].niblock /\shift_reg[0] )
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/niCC_d_reg[8][10]' (FDRE) to 'genblk1[8].niblock/niCC_d_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/niCC_d_reg[8][11]' (FDRE) to 'genblk1[9].niblock/niCC_d_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/niCC_d_reg[8][11]' (FDRE) to 'genblk1[8].niblock/niCC_d_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/niCC_d_reg[8][12]' (FDRE) to 'genblk1[10].niblock/niCC_d_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/niCC_d_reg[8][12]' (FDRE) to 'genblk1[9].niblock/niCC_d_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/niCC_d_reg[8][12]' (FDRE) to 'genblk1[8].niblock/niCC_d_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/niCC_d_reg[8][13]' (FDRE) to 'genblk1[11].niblock/niCC_d_reg[6][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/niCC_d_reg[8][13]' (FDRE) to 'genblk1[10].niblock/niCC_d_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/niCC_d_reg[8][13]' (FDRE) to 'genblk1[9].niblock/niCC_d_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/niCC_d_reg[8][13]' (FDRE) to 'genblk1[8].niblock/niCC_d_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/niCC_d_reg[8][14]' (FDRE) to 'genblk1[12].niblock/niCC_d_reg[6][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/niCC_d_reg[8][14]' (FDRE) to 'genblk1[11].niblock/niCC_d_reg[6][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/niCC_d_reg[8][14]' (FDRE) to 'genblk1[10].niblock/niCC_d_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/niCC_d_reg[8][14]' (FDRE) to 'genblk1[9].niblock/niCC_d_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/niCC_d_reg[8][14]' (FDRE) to 'genblk1[8].niblock/niCC_d_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/niCC_d_reg[8][15]' (FDRE) to 'genblk1[13].niblock/niCC_d_reg[6][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/niCC_d_reg[8][15]' (FDRE) to 'genblk1[12].niblock/niCC_d_reg[6][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/niCC_d_reg[8][15]' (FDRE) to 'genblk1[11].niblock/niCC_d_reg[6][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/niCC_d_reg[8][15]' (FDRE) to 'genblk1[10].niblock/niCC_d_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/niCC_d_reg[8][15]' (FDRE) to 'genblk1[9].niblock/niCC_d_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/niCC_d_reg[8][15]' (FDRE) to 'genblk1[8].niblock/niCC_d_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/niCC_d_reg[8][16]' (FDRE) to 'genblk1[13].niblock/niCC_d_reg[6][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/niCC_d_reg[8][16]' (FDRE) to 'genblk1[12].niblock/niCC_d_reg[6][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/niCC_d_reg[8][16]' (FDRE) to 'genblk1[11].niblock/niCC_d_reg[6][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/niCC_d_reg[8][16]' (FDRE) to 'genblk1[10].niblock/niCC_d_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].niblock/niCC_d_reg[8][16]' (FDRE) to 'genblk1[9].niblock/niCC_d_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].niblock/niCC_d_reg[8][16]' (FDRE) to 'genblk1[8].niblock/niCC_d_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].niblock/niCC_d_reg[8][17]' (FDRE) to 'genblk1[13].niblock/niCC_d_reg[6][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].niblock/niCC_d_reg[8][17]' (FDRE) to 'genblk1[12].niblock/niCC_d_reg[6][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].niblock/niCC_d_reg[8][17]' (FDRE) to 'genblk1[11].niblock/niCC_d_reg[6][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].niblock/niCC_d_reg[8][17]' (FDRE) to 'genblk1[10].niblock/niCC_d_reg[6][12]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[9].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[8].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[8].niblock /\tdc_pl/presentTime_d_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[9].niblock /\tdc_pl/presentTime_d_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].niblock /\tdc_pl/presentTime_d_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].niblock /\tdc_pl/presentTime_d_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].niblock /\tdc_pl/presentTime_d_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].niblock /\tdc_pl/presentTime_d_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[9].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[8].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[8].niblock /\tdc_pl/last1_q_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[9].niblock /\tdc_pl/last1_q_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].niblock /\tdc_pl/last1_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].niblock /\tdc_pl/last1_q_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].niblock /\tdc_pl/last1_q_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].niblock /\tdc_pl/last1_q_reg[22] )
+DSP Report: Generating DSP genblk1[16].niblock/shift_reg, operation Mode is: (A*(B:0x12))'.
+DSP Report: register genblk1[16].niblock/shift_reg is absorbed into DSP genblk1[16].niblock/shift_reg.
+DSP Report: operator genblk1[16].niblock/shift0 is absorbed into DSP genblk1[16].niblock/shift_reg.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/tdc_pl /\presentTime_d_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/tdc_pl /\presentTime_d_reg[21] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/tdc_pl /\presentTime_d_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/tdc_pl /\presentTime_d_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[8][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[8][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[8][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[8][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[8][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[7][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[7][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[7][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[7][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[7][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[6][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[6][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[6][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[6][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[6][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[5][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[5][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[5][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[5][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[5][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[4][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[4][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[4][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[4][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[4][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[3][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[3][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[3][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[3][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[3][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[2][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[2][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[1][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[1][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[1][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[1][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[1][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[16].niblock/niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[8][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[8][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[8][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[8][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[8][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[8][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[8][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[7][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[7][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[7][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].niblock/niCC_q_reg[7][19] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP shift_reg, operation Mode is: (A*(B:0x11))'.
+DSP Report: register shift_reg is absorbed into DSP shift_reg.
+DSP Report: operator shift0 is absorbed into DSP shift_reg.
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized14 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized2 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized6 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized4 has unconnected port CE
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP shift_reg, operation Mode is: (A*(B:0x13))'.
+DSP Report: register shift_reg is absorbed into DSP shift_reg.
+DSP Report: operator shift0 is absorbed into DSP shift_reg.
+DSP Report: Generating DSP shift_reg, operation Mode is: (A*(B:0x14))'.
+DSP Report: register shift_reg is absorbed into DSP shift_reg.
+DSP Report: operator shift0 is absorbed into DSP shift_reg.
+DSP Report: Generating DSP shift_reg, operation Mode is: (A*(B:0x17))'.
+DSP Report: register shift_reg is absorbed into DSP shift_reg.
+DSP Report: operator shift0 is absorbed into DSP shift_reg.
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized20 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design niBlock_s_PL__parameterized16 has unconnected port CE
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:51]
+WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:51]
+WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:51]
+WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:51]
+WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:51]
+WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:51]
+WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:51]
+WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/src/myMultAdder.sv:51]
+DSP Report: Generating DSP genblk1[19].niblock/shift_reg, operation Mode is: (A*(B:0x15))'.
+DSP Report: register genblk1[19].niblock/shift_reg is absorbed into DSP genblk1[19].niblock/shift_reg.
+DSP Report: operator genblk1[19].niblock/shift0 is absorbed into DSP genblk1[19].niblock/shift_reg.
+DSP Report: Generating DSP genblk1[20].niblock/shift_reg, operation Mode is: (A*(B:0x16))'.
+DSP Report: register genblk1[20].niblock/shift_reg is absorbed into DSP genblk1[20].niblock/shift_reg.
+DSP Report: operator genblk1[20].niblock/shift0 is absorbed into DSP genblk1[20].niblock/shift_reg.
+WARNING: [Synth 8-3331] design myMultAdder has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder has unconnected port B[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__7 has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__7 has unconnected port B[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__6 has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__6 has unconnected port B[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__5 has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__5 has unconnected port B[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__4 has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__4 has unconnected port B[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__3 has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__3 has unconnected port B[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__2 has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__2 has unconnected port B[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__1 has unconnected port A[23]
+WARNING: [Synth 8-3331] design myMultAdder__xdcDup__1 has unconnected port B[23]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:02:41 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 2381 ; free virtual = 8338
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|niBlock_s_PL | (A*(B:0x12))' | 20     | 5      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|niBlock_s_PL | (A*(B:0x11))' | 21     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|niBlock_s_PL | (A*(B:0x13))' | 19     | 5      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|niBlock_s_PL | (A*(B:0x14))' | 18     | 5      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|niBlock_s_PL | (A*(B:0x17))' | 15     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|niBlock_s_PL | (A*(B:0x15))' | 17     | 5      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|niBlock_s_PL | (A*(B:0x16))' | 16     | 5      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------------------------+------------+----------+
+|      |RTL Partition                             |Replication |Instances |
++------+------------------------------------------+------------+----------+
+|1     |myHWCorrelator_PL_top__GB0                |           1|     25146|
+|2     |myHWCorrelator_PL_top__GB1                |           1|      8305|
+|3     |myHWCorrelator_PL_top__GB2                |           1|     17018|
+|4     |myHWCorrelator_PL_top__GB3                |           1|     17447|
+|5     |myHWCorrelator_PL_top__GB4                |           1|     19725|
+|6     |AutoCorrelationFunction_v1_0_S00_AXI__GC0 |           1|        86|
++------+------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:02:49 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 2168 ; free virtual = 8146
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:57 ; elapsed = 00:02:50 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 2163 ; free virtual = 8138
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------------------------+------------+----------+
+|      |RTL Partition                             |Replication |Instances |
++------+------------------------------------------+------------+----------+
+|1     |myHWCorrelator_PL_top__GB0                |           1|     25146|
+|2     |myHWCorrelator_PL_top__GB1                |           1|      8305|
+|3     |myHWCorrelator_PL_top__GB2                |           1|     17018|
+|4     |myHWCorrelator_PL_top__GB3                |           1|     17447|
+|5     |myHWCorrelator_PL_top__GB4                |           1|     18003|
+|6     |AutoCorrelationFunction_v1_0_S00_AXI__GC0 |           1|        28|
++------+------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:03:03 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 1677 ; free virtual = 7644
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------------------------+------------+----------+
+|      |RTL Partition                             |Replication |Instances |
++------+------------------------------------------+------------+----------+
+|1     |myHWCorrelator_PL_top__GB0                |           1|     12904|
+|2     |myHWCorrelator_PL_top__GB1                |           1|      4436|
+|3     |myHWCorrelator_PL_top__GB2                |           1|      9234|
+|4     |myHWCorrelator_PL_top__GB3                |           1|      9711|
+|5     |myHWCorrelator_PL_top__GB4                |           1|     12737|
+|6     |AutoCorrelationFunction_v1_0_S00_AXI__GC0 |           1|        19|
++------+------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:03:08 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 1656 ; free virtual = 7642
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:03:08 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 1656 ; free virtual = 7642
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:07 ; elapsed = 00:03:10 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 1651 ; free virtual = 7637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:07 ; elapsed = 00:03:10 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 1651 ; free virtual = 7637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:11 ; elapsed = 00:03:14 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 1649 ; free virtual = 7635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:11 ; elapsed = 00:03:14 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 1668 ; free virtual = 7655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------+-------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                  | RTL Name                                                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------+-------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|AutoCorrelationFunction_v1_0 | AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[0].multAdd/C_delay_reg[5][63] | 6      | 128   | YES          | NO                 | YES               | 128    | 0       | 
+|AutoCorrelationFunction_v1_0 | AutoCorrelationFunction_v1_0_S00_AXI_inst/acf/genblk3[0].multAdd/C_delay_reg[6][47] | 7      | 384   | YES          | NO                 | YES               | 384    | 0       | 
++-----------------------------+-------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |c_counter_binary_0 |         1|
+|2     |blk_mem_gen_0      |         8|
+|3     |fifo_generator_0   |        23|
+|4     |mult_gen_0         |         8|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |blk_mem_gen_0        |     1|
+|2     |blk_mem_gen_0__10    |     1|
+|3     |blk_mem_gen_0__11    |     1|
+|4     |blk_mem_gen_0__12    |     1|
+|5     |blk_mem_gen_0__13    |     1|
+|6     |blk_mem_gen_0__14    |     1|
+|7     |blk_mem_gen_0__8     |     1|
+|8     |blk_mem_gen_0__9     |     1|
+|9     |c_counter_binary_0   |     1|
+|10    |fifo_generator_0     |     1|
+|11    |fifo_generator_0__23 |     1|
+|12    |fifo_generator_0__24 |     1|
+|13    |fifo_generator_0__25 |     1|
+|14    |fifo_generator_0__26 |     1|
+|15    |fifo_generator_0__27 |     1|
+|16    |fifo_generator_0__28 |     1|
+|17    |fifo_generator_0__29 |     1|
+|18    |fifo_generator_0__30 |     1|
+|19    |fifo_generator_0__31 |     1|
+|20    |fifo_generator_0__32 |     1|
+|21    |fifo_generator_0__33 |     1|
+|22    |fifo_generator_0__34 |     1|
+|23    |fifo_generator_0__35 |     1|
+|24    |fifo_generator_0__36 |     1|
+|25    |fifo_generator_0__37 |     1|
+|26    |fifo_generator_0__38 |     1|
+|27    |fifo_generator_0__39 |     1|
+|28    |fifo_generator_0__40 |     1|
+|29    |fifo_generator_0__41 |     1|
+|30    |fifo_generator_0__42 |     1|
+|31    |fifo_generator_0__43 |     1|
+|32    |fifo_generator_0__44 |     1|
+|33    |mult_gen_0           |     1|
+|34    |mult_gen_0__10       |     1|
+|35    |mult_gen_0__11       |     1|
+|36    |mult_gen_0__12       |     1|
+|37    |mult_gen_0__13       |     1|
+|38    |mult_gen_0__14       |     1|
+|39    |mult_gen_0__8        |     1|
+|40    |mult_gen_0__9        |     1|
+|41    |BUFG                 |     2|
+|42    |CARRY4               |   262|
+|43    |DSP48E1_2            |     8|
+|44    |DSP48E1_4            |     7|
+|45    |DSP48E1_5            |     8|
+|46    |LUT1                 |    15|
+|47    |LUT2                 |  1359|
+|48    |LUT3                 |  2113|
+|49    |LUT4                 |  3683|
+|50    |LUT5                 |  3391|
+|51    |LUT6                 | 13076|
+|52    |MUXF7                |   148|
+|53    |MUXF8                |    45|
+|54    |SRL16E               |   512|
+|55    |FDRE                 | 20762|
+|56    |FDSE                 |     3|
+|57    |IBUF                 |    12|
+|58    |OBUF                 |    41|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------+-------------------------------------+------+
+|      |Instance                                    |Module                               |Cells |
++------+--------------------------------------------+-------------------------------------+------+
+|1     |top                                         |                                     | 47373|
+|2     |  AutoCorrelationFunction_v1_0_S00_AXI_inst |AutoCorrelationFunction_v1_0_S00_AXI | 47318|
+|3     |    acf                                     |myHWCorrelator_PL_top                | 47300|
+|4     |      edgeDetect                            |edge_Detect                          |    33|
+|5     |      \genblk1[0].niblock                   |niBlock_s_PL                         |   488|
+|6     |        tdc_pl                              |tdc_PL__xdcDup__1                    |   251|
+|7     |      \genblk1[10].niblock                  |niBlock_s_PL__parameterized9         |  1760|
+|8     |        tdc_pl                              |tdc_PL__parameterized8               |   403|
+|9     |      \genblk1[11].niblock                  |niBlock_s_PL__parameterized10        |  2177|
+|10    |        tdc_pl                              |tdc_PL__parameterized9               |   227|
+|11    |      \genblk1[12].niblock                  |niBlock_s_PL__parameterized11        |  1937|
+|12    |        tdc_pl                              |tdc_PL__parameterized10              |   203|
+|13    |      \genblk1[13].niblock                  |niBlock_s_PL__parameterized12        |  2174|
+|14    |        tdc_pl                              |tdc_PL__parameterized11              |   200|
+|15    |      \genblk1[14].niblock                  |niBlock_s_PL__parameterized13        |  1733|
+|16    |        tdc_pl                              |tdc_PL__parameterized12              |   175|
+|17    |      \genblk1[15].niblock                  |niBlock_s_PL__parameterized14        |  2693|
+|18    |        tdc_pl                              |tdc_PL__parameterized13              |   166|
+|19    |      \genblk1[16].niblock                  |niBlock_s_PL__parameterized15        |  2709|
+|20    |        tdc_pl                              |tdc_PL__parameterized14              |   253|
+|21    |      \genblk1[17].niblock                  |niBlock_s_PL__parameterized16        |  2753|
+|22    |        tdc_pl                              |tdc_PL__parameterized15              |   164|
+|23    |      \genblk1[18].niblock                  |niBlock_s_PL__parameterized17        |  2883|
+|24    |        tdc_pl                              |tdc_PL__parameterized16              |   160|
+|25    |      \genblk1[19].niblock                  |niBlock_s_PL__parameterized18        |  3308|
+|26    |        tdc_pl                              |tdc_PL__parameterized17              |   225|
+|27    |      \genblk1[1].niblock                   |niBlock_s_PL__parameterized0         |   796|
+|28    |        tdc_pl                              |tdc_PL                               |   416|
+|29    |      \genblk1[20].niblock                  |niBlock_s_PL__parameterized19        |  3143|
+|30    |        tdc_pl                              |tdc_PL__parameterized18              |   151|
+|31    |      \genblk1[21].niblock                  |niBlock_s_PL__parameterized20        |  3320|
+|32    |        tdc_pl                              |tdc_PL__parameterized19              |   153|
+|33    |      \genblk1[2].niblock                   |niBlock_s_PL__parameterized1         |   652|
+|34    |        tdc_pl                              |tdc_PL__parameterized0               |   224|
+|35    |      \genblk1[3].niblock                   |niBlock_s_PL__parameterized2         |  1050|
+|36    |        tdc_pl                              |tdc_PL__parameterized1               |   241|
+|37    |      \genblk1[4].niblock                   |niBlock_s_PL__parameterized3         |   933|
+|38    |        tdc_pl                              |tdc_PL__parameterized2               |   238|
+|39    |      \genblk1[5].niblock                   |niBlock_s_PL__parameterized4         |  1395|
+|40    |        tdc_pl                              |tdc_PL__parameterized3               |   524|
+|41    |      \genblk1[6].niblock                   |niBlock_s_PL__parameterized5         |  1007|
+|42    |        tdc_pl                              |tdc_PL__parameterized4               |   200|
+|43    |      \genblk1[7].niblock                   |niBlock_s_PL__parameterized6         |  1578|
+|44    |        tdc_pl                              |tdc_PL__parameterized5               |   228|
+|45    |      \genblk1[8].niblock                   |niBlock_s_PL__parameterized7         |  1481|
+|46    |        tdc_pl                              |tdc_PL__parameterized6               |   229|
+|47    |      \genblk1[9].niblock                   |niBlock_s_PL__parameterized8         |  1700|
+|48    |        tdc_pl                              |tdc_PL__parameterized7               |   254|
+|49    |      \genblk3[0].multAdd                   |myMultAdder__xdcDup__1               |   482|
+|50    |      \genblk3[1].multAdd                   |myMultAdder__xdcDup__2               |   482|
+|51    |      \genblk3[2].multAdd                   |myMultAdder__xdcDup__3               |   482|
+|52    |      \genblk3[3].multAdd                   |myMultAdder__xdcDup__4               |   482|
+|53    |      \genblk3[4].multAdd                   |myMultAdder__xdcDup__5               |   482|
+|54    |      \genblk3[5].multAdd                   |myMultAdder__xdcDup__6               |   482|
+|55    |      \genblk3[6].multAdd                   |myMultAdder__xdcDup__7               |   482|
+|56    |      \genblk3[7].multAdd                   |myMultAdder                          |   482|
+|57    |      mux                                   |binMultiplexer_PL                    |   513|
+|58    |      photonCounter                         |tdc_PL__parameterized20              |    41|
++------+--------------------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:11 ; elapsed = 00:03:14 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 1668 ; free virtual = 7655
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:07 ; elapsed = 00:03:11 . Memory (MB): peak = 2064.824 ; gain = 283.340 ; free physical = 4840 ; free virtual = 10826
+Synthesis Optimization Complete : Time (s): cpu = 00:02:13 ; elapsed = 00:03:15 . Memory (MB): peak = 2064.824 ; gain = 502.902 ; free physical = 4844 ; free virtual = 10826
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 478 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2107.250 ; gain = 0.000 ; free physical = 4764 ; free virtual = 10746
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+336 Infos, 221 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:20 ; elapsed = 00:03:23 . Memory (MB): peak = 2107.250 ; gain = 710.699 ; free physical = 4906 ; free virtual = 10888
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.250 ; gain = 0.000 ; free physical = 4906 ; free virtual = 10888
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/AutoCorrelationFunction_v1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2131.262 ; gain = 24.012 ; free physical = 4904 ; free virtual = 10891
+INFO: [runtcl-4] Executing : report_utilization -file AutoCorrelationFunction_v1_0_utilization_synth.rpt -pb AutoCorrelationFunction_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 22:03:03 2019...

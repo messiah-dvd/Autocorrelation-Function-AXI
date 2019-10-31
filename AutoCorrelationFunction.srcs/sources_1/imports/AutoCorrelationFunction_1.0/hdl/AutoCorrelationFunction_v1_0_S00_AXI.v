@@ -412,7 +412,8 @@
 	wire [7:0] acfAddr;
 	reg [63:0] acfWrData;
 	wire [63:0] acfRdData;
-    reg [31:0] dataCount = 0;
+    reg [31:0] dataCount;
+    reg transmissionJustStarted;
     wire acfDataComplete;
 	
 	// if the ACF isn't finished, the BRAM address will point to the next acf element
@@ -441,11 +442,15 @@
     assign acfWrEn = !acfDataComplete;
     
     always @(posedge initTx)
-        dataCount <= 0;
+        transmissionJustStarted <= 0;
     
     always @(posedge wrEn) begin
+        if (transmissionJustStarted == 0) begin
+            dataCount <= 0;
+        end else begin
+            dataCount <= dataCount + 1;
+        end
         acfWrData <= acfEl;
-        dataCount <= dataCount + 1;
     end
     
     wire CE, initTx, wrEn, cntFinished;
