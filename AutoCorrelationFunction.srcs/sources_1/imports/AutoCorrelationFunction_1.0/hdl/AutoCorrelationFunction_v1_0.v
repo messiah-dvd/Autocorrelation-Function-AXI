@@ -21,6 +21,7 @@
 		// Users to add ports here
         input wire smpl_clk,
         input wire CH1,
+        output wire [3:0] diag,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -82,7 +83,8 @@
 		.S_AXI_RVALID(s00_axi_rvalid),
 		.S_AXI_RREADY(s00_axi_rready),
 		.smpl_clk(smpl_clk),
-		.CH1(CH1)
+		.CH1(CH1),
+		.diag(diag)
 	);
 
 	// Add user logic here

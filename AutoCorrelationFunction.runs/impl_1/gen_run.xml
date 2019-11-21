@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1572487164">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1574353211">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="RDI-RDI" Name="AutoCorrelationFunction_v1_0.vdi"/>
   <File Type="BG-DRC" Name="AutoCorrelationFunction_v1_0.drc"/>
   <File Type="BG-BGN" Name="AutoCorrelationFunction_v1_0.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="AutoCorrelationFunction_v1_0.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="AutoCorrelationFunction_v1_0.ltx"/>
+  <File Type="RBD_FILE" Name="AutoCorrelationFunction_v1_0.rbd"/>
+  <File Type="NPI_FILE" Name="AutoCorrelationFunction_v1_0.npi"/>
+  <File Type="RNPI_FILE" Name="AutoCorrelationFunction_v1_0.rnpi"/>
+  <File Type="CFI_FILE" Name="AutoCorrelationFunction_v1_0.cfi"/>
+  <File Type="RDI-RDI" Name="AutoCorrelationFunction_v1_0.vdi"/>
+  <File Type="RCFI_FILE" Name="AutoCorrelationFunction_v1_0.rcfi"/>
+  <File Type="PDI-FILE" Name="AutoCorrelationFunction_v1_0.pdi"/>
   <File Type="BITSTR-MMI" Name="AutoCorrelationFunction_v1_0.mmi"/>
   <File Type="BITSTR-BMM" Name="AutoCorrelationFunction_v1_0_bd.bmm"/>
   <File Type="BITSTR-NKY" Name="AutoCorrelationFunction_v1_0.nky"/>
@@ -159,11 +165,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/AutoCorrelationFunction/component.xml">
-      <FileInfo SFType="IPXACT">
-        <Attr Name="ImportPath" Val="$PPRDIR/../ip_repo/AutoCorrelationFunction/component.xml"/>
-        <Attr Name="ImportTime" Val="1572405681"/>
-      </FileInfo>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
@@ -195,8 +198,8 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="c_counter_binary_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_0"/>
 </GenRun>

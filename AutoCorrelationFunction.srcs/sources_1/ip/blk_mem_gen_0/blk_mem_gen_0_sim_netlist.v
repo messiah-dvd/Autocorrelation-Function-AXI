@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Tue Oct 22 11:43:52 2019
+// Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+// Date        : Thu Nov 21 11:15:10 2019
 // Host        : megatron running 64-bit Ubuntu 18.04.3 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top blk_mem_gen_0 -prefix
+//               blk_mem_gen_0_ blk_mem_gen_0_sim_netlist.v
 // Design      : blk_mem_gen_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "blk_mem_gen_0,blk_mem_gen_v8_4_3,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_4_3,Vivado 2019.1" *) 
+(* CHECK_LICENSE_TYPE = "blk_mem_gen_0,blk_mem_gen_v8_4_4,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_4_4,Vivado 2019.2" *) 
 (* NotValidForBitStream *)
 module blk_mem_gen_0
    (clka,
@@ -144,7 +144,7 @@ module blk_mem_gen_0
   (* C_WRITE_WIDTH_B = "64" *) 
   (* C_XDEVICEFAMILY = "zynq" *) 
   (* downgradeipidentifiedwarnings = "yes" *) 
-  blk_mem_gen_0_blk_mem_gen_v8_4_3 U0
+  blk_mem_gen_0_blk_mem_gen_v8_4_4 U0
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -210,7 +210,6 @@ module blk_mem_gen_0
         .web(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module blk_mem_gen_0_blk_mem_gen_generic_cstr
    (doutb,
     rsta_busy,
@@ -257,7 +256,6 @@ module blk_mem_gen_0_blk_mem_gen_generic_cstr
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module blk_mem_gen_0_blk_mem_gen_prim_width
    (doutb,
     rsta_busy,
@@ -285,6 +283,7 @@ module blk_mem_gen_0_blk_mem_gen_prim_width
   wire ENB_dly_reg;
   wire ENB_dly_reg_D;
   wire POR_B;
+  wire POR_B0;
   wire [4:0]RSTB_SHFT_REG;
   wire \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3_n_0 ;
   wire [4:0]addra;
@@ -293,7 +292,6 @@ module blk_mem_gen_0_blk_mem_gen_prim_width
   wire [63:0]dina;
   wire [63:0]doutb;
   wire enb;
-  wire p_1_out;
   wire ram_rstram_a_busy__0;
   wire ram_rstreg_b;
   wire ram_rstreg_b_busy__0;
@@ -339,13 +337,13 @@ module blk_mem_gen_0_blk_mem_gen_prim_width
     \SAFETY_CKT_GEN.POR_B_i_1 
        (.I0(RSTB_SHFT_REG[0]),
         .I1(RSTB_SHFT_REG[4]),
-        .O(p_1_out));
+        .O(POR_B0));
   FDRE #(
     .INIT(1'b0)) 
     \SAFETY_CKT_GEN.POR_B_reg 
        (.C(clka),
         .CE(1'b1),
-        .D(p_1_out),
+        .D(POR_B0),
         .Q(POR_B),
         .R(1'b0));
   FDRE \SAFETY_CKT_GEN.RSTA_BUSY_NO_REG.RSTA_BUSY_reg 
@@ -419,7 +417,6 @@ module blk_mem_gen_0_blk_mem_gen_prim_width
         .O(ram_rstreg_b_busy__0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module blk_mem_gen_0_blk_mem_gen_prim_wrapper
    (doutb,
     ram_rstreg_b,
@@ -705,7 +702,6 @@ module blk_mem_gen_0_blk_mem_gen_prim_wrapper
         .O(ram_rstreg_b));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module blk_mem_gen_0_blk_mem_gen_top
    (doutb,
     rsta_busy,
@@ -777,8 +773,8 @@ endmodule
 (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) (* C_WRITE_DEPTH_A = "30" *) 
 (* C_WRITE_DEPTH_B = "30" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) (* C_WRITE_MODE_B = "READ_FIRST" *) 
 (* C_WRITE_WIDTH_A = "64" *) (* C_WRITE_WIDTH_B = "64" *) (* C_XDEVICEFAMILY = "zynq" *) 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_3" *) (* downgradeipidentifiedwarnings = "yes" *) 
-module blk_mem_gen_0_blk_mem_gen_v8_4_3
+(* downgradeipidentifiedwarnings = "yes" *) 
+module blk_mem_gen_0_blk_mem_gen_v8_4_4
    (clka,
     rsta,
     ena,
@@ -1080,7 +1076,7 @@ module blk_mem_gen_0_blk_mem_gen_v8_4_3
   assign sbiterr = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  blk_mem_gen_0_blk_mem_gen_v8_4_3_synth inst_blk_mem_gen
+  blk_mem_gen_0_blk_mem_gen_v8_4_4_synth inst_blk_mem_gen
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -1093,8 +1089,7 @@ module blk_mem_gen_0_blk_mem_gen_v8_4_3
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_3_synth" *) 
-module blk_mem_gen_0_blk_mem_gen_v8_4_3_synth
+module blk_mem_gen_0_blk_mem_gen_v8_4_4_synth
    (doutb,
     rsta_busy,
     rstb_busy,

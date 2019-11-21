@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Wed Oct 30 22:04:11 2019
+| Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date             : Thu Nov 21 11:30:12 2019
 | Host             : megatron running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file AutoCorrelationFunction_v1_0_power_routed.rpt -pb AutoCorrelationFunction_v1_0_power_summary_routed.pb -rpx AutoCorrelationFunction_v1_0_power_routed.rpx
 | Design           : AutoCorrelationFunction_v1_0
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 10.854 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 11.659 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 10.107                           |
+| Dynamic (W)              | 10.911                           |
 | Device Static (W)        | 0.747                            |
 | Effective TJA (C/W)      | 11.5                             |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     5.192 |     6288 |       --- |             --- |
-|   LUT as Logic |     4.531 |     1589 |     17600 |            9.03 |
-|   Register     |     0.644 |     3417 |     35200 |            9.71 |
+| Slice Logic    |     5.122 |     6526 |       --- |             --- |
+|   LUT as Logic |     4.461 |     1759 |     17600 |            9.99 |
+|   Register     |     0.644 |     3455 |     35200 |            9.82 |
 |   BUFG         |     0.012 |        2 |        32 |            6.25 |
-|   CARRY4       |     0.005 |      184 |      4400 |            4.18 |
-|   Others       |     0.000 |      764 |       --- |             --- |
-| Signals        |     4.801 |     3802 |       --- |             --- |
-| I/O            |     0.114 |       53 |       100 |           53.00 |
+|   CARRY4       |     0.005 |      189 |      4400 |            4.30 |
+|   Others       |     0.000 |      766 |       --- |             --- |
+| Signals        |     5.077 |     3929 |       --- |             --- |
+| DSPs           |     0.047 |        1 |        80 |            1.25 |
+| I/O            |     0.665 |       91 |       100 |           91.00 |
 | Static Power   |     0.747 |          |           |                 |
-| Total          |    10.854 |          |           |                 |
+| Total          |    11.659 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,11 +72,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    10.166 |      10.037 |      0.129 |
-| Vccaux    |       1.800 |     0.046 |       0.006 |      0.040 |
+| Vccint    |       1.000 |    10.555 |      10.426 |      0.129 |
+| Vccaux    |       1.800 |     0.080 |       0.040 |      0.040 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.034 |       0.033 |      0.001 |
+| Vcco18    |       1.800 |     0.231 |       0.230 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -145,33 +146,34 @@ Table of Contents
 +---------------------------------------------+-----------+
 | Name                                        | Power (W) |
 +---------------------------------------------+-----------+
-| AutoCorrelationFunction_v1_0                |    10.107 |
-|   AutoCorrelationFunction_v1_0_S00_AXI_inst |     9.803 |
-|     acf                                     |     9.786 |
-|       edgeDetect                            |     0.030 |
-|       genblk1[0].niblock                    |     0.415 |
-|       genblk1[10].niblock                   |     0.419 |
-|       genblk1[11].niblock                   |     0.412 |
-|       genblk1[12].niblock                   |     0.412 |
-|       genblk1[13].niblock                   |     0.419 |
-|       genblk1[14].niblock                   |     0.437 |
-|       genblk1[15].niblock                   |     0.461 |
-|       genblk1[16].niblock                   |     0.451 |
-|       genblk1[17].niblock                   |     0.427 |
-|       genblk1[18].niblock                   |     0.428 |
-|       genblk1[19].niblock                   |     0.437 |
-|       genblk1[1].niblock                    |     0.426 |
-|       genblk1[20].niblock                   |     0.424 |
-|       genblk1[21].niblock                   |     0.394 |
-|       genblk1[2].niblock                    |     0.424 |
-|       genblk1[3].niblock                    |     0.422 |
-|       genblk1[4].niblock                    |     0.428 |
-|       genblk1[5].niblock                    |     0.396 |
-|       genblk1[6].niblock                    |     0.467 |
+| AutoCorrelationFunction_v1_0                |    10.911 |
+|   AutoCorrelationFunction_v1_0_S00_AXI_inst |     9.920 |
+|     acf                                     |     9.889 |
+|       edgeDetect                            |     0.032 |
+|       genblk1[0].niblock                    |     0.433 |
+|       genblk1[10].niblock                   |     0.415 |
+|       genblk1[11].niblock                   |     0.414 |
+|       genblk1[12].niblock                   |     0.393 |
+|       genblk1[13].niblock                   |     0.431 |
+|       genblk1[14].niblock                   |     0.399 |
+|       genblk1[15].niblock                   |     0.452 |
+|       genblk1[16].niblock                   |     0.436 |
+|       genblk1[17].niblock                   |     0.432 |
+|       genblk1[18].niblock                   |     0.437 |
+|       genblk1[19].niblock                   |     0.435 |
+|       genblk1[1].niblock                    |     0.424 |
+|       genblk1[20].niblock                   |     0.428 |
+|       genblk1[21].niblock                   |     0.421 |
+|       genblk1[2].niblock                    |     0.434 |
+|       genblk1[3].niblock                    |     0.399 |
+|       genblk1[4].niblock                    |     0.417 |
+|       genblk1[5].niblock                    |     0.420 |
+|       genblk1[6].niblock                    |     0.462 |
 |       genblk1[7].niblock                    |     0.426 |
-|       genblk1[8].niblock                    |     0.409 |
-|       genblk1[9].niblock                    |     0.416 |
-|       photonCounter                         |     0.406 |
+|       genblk1[8].niblock                    |     0.421 |
+|       genblk1[9].niblock                    |     0.428 |
+|       mainTimer                             |     0.063 |
+|       photonCounter                         |     0.413 |
 +---------------------------------------------+-----------+
 
 

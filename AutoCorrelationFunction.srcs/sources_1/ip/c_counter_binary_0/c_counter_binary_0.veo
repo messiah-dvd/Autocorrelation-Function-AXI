@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:ip:c_counter_binary:12.0
-// IP Revision: 13
+// IP Revision: 14
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections

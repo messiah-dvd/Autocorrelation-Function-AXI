@@ -22,6 +22,7 @@
 		// Users to add ports here
         input wire smpl_clk,
         input wire CH1,
+        output wire [3:0] diag,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -460,7 +461,11 @@
     assign maxCnt[CNT_SIZE-1:32] = slv_reg1[31 -: CNT_SIZE-32];
     assign CE = slv_reg1[0];
     assign initTx = slv_reg2[0];
-    
+    assign diag[0] = CE;
+    assign diag[1] = initTx;
+    assign diag[2] = cntFinished;
+    assign diag[3] = CH1;
+        
     myHWCorrelator_PL_top #(
         .PRECNTSHIFT(PRECNTSHIFT),
         .MIN_NI_WIDTH(MIN_NI_WIDTH),

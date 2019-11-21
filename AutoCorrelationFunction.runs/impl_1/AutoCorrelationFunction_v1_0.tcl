@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -73,6 +74,7 @@ set rc [catch {
   set_property webtalk.parent_dir /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.cache/wt [current_project]
   set_property parent.project_path /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.xpr [current_project]
   set_property ip_repo_paths {
+  /home/feliks/Vivado/AutoCorrelationFunction
   /home/feliks/Vivado/ip_repo/myip_1.0
   /home/feliks/Vivado/ip_repo
 } [current_project]
@@ -81,10 +83,10 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.runs/synth_1/AutoCorrelationFunction_v1_0.dcp
-  read_ip -quiet /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci
-  read_ip -quiet /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_ip -quiet /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
   read_ip -quiet /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
+  read_ip -quiet /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
+  read_ip -quiet /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  read_ip -quiet /home/feliks/Vivado/AutoCorrelationFunction/AutoCorrelationFunction.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci
   link_design -top AutoCorrelationFunction_v1_0 -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -157,25 +159,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  catch { write_mem_info -force AutoCorrelationFunction_v1_0.mmi }
-  write_bitstream -force AutoCorrelationFunction_v1_0.bit 
-  catch {write_debug_probes -quiet -force AutoCorrelationFunction_v1_0}
-  catch {file copy -force AutoCorrelationFunction_v1_0.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
