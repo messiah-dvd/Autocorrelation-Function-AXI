@@ -415,6 +415,7 @@
 	wire [63:0] acfRdData;
     reg [31:0] dataCount;
     wire acfDataComplete;
+    reg transmissionJustStarted;
     wire [63:0] acfEl;
 	
 	// if the ACF isn't finished, the BRAM address will point to the next acf element
@@ -448,12 +449,16 @@
     assign acfDataComplete = dataCount == 32'hA8; // Not sure why it's stopping at A8. Expecting 241: (30 * NUM_CHANS + 1);
     
     always @(posedge initTx) begin
-        dataCount <= -1; // it will increment to zero for the first element, which is the photon count
+        transmissionJustStarted <= 1;
         acfWrEn <= 1;
     end
     
     always @(posedge wrEn) begin
-        dataCount <= dataCount + 1;
+        if (transmissionJustStarted) begin
+            dataCount = -1; // it will increment to zero for the first element, which is the photon count
+            transmissionJustStarted <= 0;
+        end
+        dataCount = dataCount + 1;
         acfWrData <= acfEl;
     end
     
