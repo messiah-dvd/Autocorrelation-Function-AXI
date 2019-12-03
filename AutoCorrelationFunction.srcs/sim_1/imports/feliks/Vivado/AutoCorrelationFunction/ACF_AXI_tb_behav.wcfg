@@ -17,7 +17,7 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="179"></NameColumnWidth>
-      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="15" />
    <wvobject fp_name="/ACF_AXI_tb/DUT/s00_axi_aclk" type="logic">

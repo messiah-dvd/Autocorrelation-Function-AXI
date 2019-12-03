@@ -9,6 +9,7 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source AutoCorrelationFunction_v1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 462.215 ; gain = 161.809
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vitis/Vivado/custom_ip_repo'.
 WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Vitis/Vivado/custom_ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1'.)
@@ -21,13 +22,14 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6000 
-WARNING: [Synth 8-2490] overwriting previous definition of module myHWCorrelator_PL_top_0 [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-12672-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
+INFO: Helper process launched with PID 8084 
+WARNING: [Synth 8-2490] overwriting previous definition of module myHWCorrelator_PL_top_0 [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11148-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
 WARNING: [Synth 8-6901] identifier 'acfRdData' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:388]
-WARNING: [Synth 8-6901] identifier 'initTx' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:450]
+WARNING: [Synth 8-6901] identifier 'initTx' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:451]
 WARNING: [Synth 8-6901] identifier 'wrEn' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:455]
+WARNING: [Synth 8-6901] identifier 'initTx' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1009.461 ; gain = 241.832
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1008.723 ; gain = 242.234
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelationFunction_v1_0' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0.v:3]
 	Parameter CNT_SIZE bound to: 35 - type: integer 
@@ -50,12 +52,12 @@ INFO: [Synth 8-6157] synthesizing module 'AutoCorrelationFunction_v1_0_S00_AXI' 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
 INFO: [Synth 8-251] setting axi_arready [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:330]
-INFO: [Synth 8-6157] synthesizing module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-12672-Frey70Twr-W10D/realtime/dual_port_acf_bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dual_port_acf_bram' (1#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-12672-Frey70Twr-W10D/realtime/dual_port_acf_bram_stub.v:6]
-WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (8) of module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:443]
-INFO: [Synth 8-6157] synthesizing module 'myHWCorrelator_PL_top_0' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-12672-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myHWCorrelator_PL_top_0' (2#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-12672-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11148-Frey70Twr-W10D/realtime/dual_port_acf_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_acf_bram' (1#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11148-Frey70Twr-W10D/realtime/dual_port_acf_bram_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:438]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (8) of module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:444]
+INFO: [Synth 8-6157] synthesizing module 'myHWCorrelator_PL_top_0' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11148-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myHWCorrelator_PL_top_0' (2#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11148-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
 WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:233]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelationFunction_v1_0_S00_AXI' (3#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelationFunction_v1_0' (4#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0.v:3]
@@ -66,7 +68,7 @@ WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnec
 WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1144.953 ; gain = 378.465
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -79,12 +81,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1144.953 ; gain = 378.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1144.953 ; gain = 378.465
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1180.496 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1144.953 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -93,24 +95,22 @@ Parsing XDC File [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/Au
 Finished Parsing XDC File [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/myHWCorrelator_PL_top_0/myHWCorrelator_PL_top_0_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf_core'
 Parsing XDC File [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/dual_port_acf_bram_synth_1/dual_port_acf_bram/dual_port_acf_bram_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf_data'
 Finished Parsing XDC File [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/dual_port_acf_bram_synth_1/dual_port_acf_bram/dual_port_acf_bram_in_context.xdc] for cell 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acf_data'
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_generator_0'. The XDC file c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc will not be read for any cell of this module.
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_generator_0'. The XDC file c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc will not be read for any cell of this module.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1180.496 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1154.898 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1180.496 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1154.898 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1154.898 ; gain = 388.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1154.898 ; gain = 388.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -118,10 +118,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf_core. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf_data. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1154.898 ; gain = 388.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1154.898 ; gain = 388.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -133,14 +133,12 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
 	               64 Bit    Registers := 1     
 	               32 Bit    Registers := 4     
 	               10 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 7     
+	                1 Bit    Registers := 6     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 6     
 	   4 Input     32 Bit        Muxes := 3     
@@ -154,14 +152,12 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module AutoCorrelationFunction_v1_0_S00_AXI 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
 	               64 Bit    Registers := 1     
 	               32 Bit    Registers := 4     
 	               10 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 7     
+	                1 Bit    Registers := 6     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 6     
 	   4 Input     32 Bit        Muxes := 3     
@@ -188,13 +184,15 @@ WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port
 WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_arprot[2]
 WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_arprot[1]
 WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0 has unconnected port s00_axi_arprot[0]
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AutoCorrelationFunction_v1_0_S00_AXI_inst/acfWrEn_reg )
 INFO: [Synth 8-3886] merging instance 'AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acfWrEn_reg/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:462]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:462]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:462]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1154.898 ; gain = 388.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -206,13 +204,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1156.500 ; gain = 390.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1156.723 ; gain = 390.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -224,7 +222,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1180.496 ; gain = 412.867
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1167.129 ; gain = 400.641
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -248,13 +246,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1181.871 ; gain = 414.242
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.934 ; gain = 415.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1181.871 ; gain = 414.242
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.934 ; gain = 415.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -262,100 +260,36 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[31] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[31]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[31] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[31]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[30] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[30]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[30] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[30]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[29] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[29]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[29] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[29]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[28] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[28]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[28] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[28]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[27] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[27]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[27] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[27]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[26] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[26]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[26] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[26]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[25] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[25]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[25] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[25]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[24] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[24]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[24] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[24]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[23] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[23]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[23] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[23]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[22] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[22]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[22] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[22]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[21] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[21]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[21] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[21]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[20] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[20]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[20] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[20]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[19] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[19]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[19] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[19]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[18] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[18]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[18] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[18]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[17] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[17]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[17] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[17]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[16] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[16]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[16] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[16]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[15] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[15]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[15] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[15]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[14] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[14]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[14] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[14]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[13] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[13]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[13] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[13]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[12] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[12]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[12] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[12]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[11] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[11]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[11] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[11]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[10] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[10]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[10] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[10]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[9] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[9]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[9] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[9]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[8] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[8]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[8] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[8]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[7] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[7]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[7] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[7]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[6] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[6]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[6] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[6]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[5] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[5]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[5] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[5]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[4] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[4]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[4] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[4]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[3] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[3]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[3] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[3]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[2] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[2]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[2] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[2]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[1] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[1]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[1] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[1]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[0] with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[0]__0/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:437]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount[0] with 2nd driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount_reg[0]/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1181.871 ; gain = 414.242
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.934 ; gain = 415.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1181.871 ; gain = 414.242
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.934 ; gain = 415.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1181.871 ; gain = 414.242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.934 ; gain = 415.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1181.871 ; gain = 414.242
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.934 ; gain = 415.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -375,15 +309,15 @@ Report Cell Usage:
 +------+------------------------+------+
 |1     |dual_port_acf_bram      |     1|
 |2     |myHWCorrelator_PL_top_0 |     1|
-|3     |BUFG                    |     2|
+|3     |BUFG                    |     1|
 |4     |CARRY4                  |     8|
-|5     |LUT1                    |     2|
-|6     |LUT2                    |     2|
+|5     |LUT1                    |     1|
+|6     |LUT2                    |    34|
 |7     |LUT3                    |     1|
 |8     |LUT4                    |     4|
 |9     |LUT5                    |     7|
 |10    |LUT6                    |     8|
-|11    |FDRE                    |   213|
+|11    |FDRE                    |   181|
 |12    |FDSE                    |     1|
 |13    |IBUF                    |    56|
 |14    |OBUF                    |    45|
@@ -393,32 +327,32 @@ Report Instance Areas:
 +------+--------------------------------------------+-------------------------------------+------+
 |      |Instance                                    |Module                               |Cells |
 +------+--------------------------------------------+-------------------------------------+------+
-|1     |top                                         |                                     |   479|
-|2     |  AutoCorrelationFunction_v1_0_S00_AXI_inst |AutoCorrelationFunction_v1_0_S00_AXI |   369|
+|1     |top                                         |                                     |   477|
+|2     |  AutoCorrelationFunction_v1_0_S00_AXI_inst |AutoCorrelationFunction_v1_0_S00_AXI |   375|
 +------+--------------------------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1181.871 ; gain = 414.242
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.934 ; gain = 415.445
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 64 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:01:01 . Memory (MB): peak = 1181.871 ; gain = 414.242
-Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1181.871 ; gain = 414.242
+Synthesis finished with 0 errors, 3 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1181.934 ; gain = 405.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.934 ; gain = 415.445
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1193.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1191.980 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1197.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1201.078 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-28 Infos, 21 Warnings, 66 Critical Warnings and 0 Errors encountered.
+27 Infos, 22 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 1197.641 ; gain = 705.133
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1197.641 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 1201.078 ; gain = 709.055
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1201.078 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/AutoCorrelationFunction_v1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file AutoCorrelationFunction_v1_0_utilization_synth.rpt -pb AutoCorrelationFunction_v1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 23:07:41 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 08:04:34 2019...

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1575345948">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1575378189">
   <File Type="PA-TCL" Name="AutoCorrelationFunction_v1_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="AutoCorrelationFunction_v1_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="AutoCorrelationFunction_v1_0_reports.tcl"/>
