@@ -6,61 +6,61 @@
   "C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/blk_mem_gen_v8_4_4 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/blk_mem_gen_0/simulation/blk_mem_gen_v8_4.v" \
+  "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../../AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
 -endlib
 -makelib ies_lib/xbip_utils_v3_0_10 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/c_reg_fd_v12_0_6 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xbip_dsp48_wrapper_v3_0_4 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xbip_pipe_v3_0_6 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xbip_dsp48_addsub_v3_0_6 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xbip_addsub_v3_0_6 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/xbip_addsub_v3_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/xbip_addsub_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/c_addsub_v12_0_14 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/c_addsub_v12_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/c_gate_bit_v12_0_6 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/c_gate_bit_v12_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/c_gate_bit_v12_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xbip_counter_v3_0_6 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/xbip_counter_v3_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/xbip_counter_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/c_counter_binary_v12_0_14 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/c_counter_binary_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/c_counter_binary_v12_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../../AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/c_counter_binary_0/sim/c_counter_binary_0.vhd" \
 -endlib
 -makelib ies_lib/fifo_generator_v13_2_5 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/fifo_generator_0/simulation/fifo_generator_vlog_beh.v" \
+  "../../../ipstatic/simulation/fifo_generator_vlog_beh.v" \
 -endlib
 -makelib ies_lib/fifo_generator_v13_2_5 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/fifo_generator_0/hdl/fifo_generator_v13_2_rfs.vhd" \
+  "../../../ipstatic/hdl/fifo_generator_v13_2_rfs.vhd" \
 -endlib
 -makelib ies_lib/fifo_generator_v13_2_5 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/fifo_generator_0/hdl/fifo_generator_v13_2_rfs.v" \
+  "../../../ipstatic/hdl/fifo_generator_v13_2_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../../AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/sim/fifo_generator_0.v" \
 -endlib
 -makelib ies_lib/xbip_bram18k_v3_0_6 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/mult_gen_0/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/mult_gen_v12_0_16 \
-  "../../../ipstatic/myHWCorrelator_PL_top_0/src/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+  "../../../ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../../AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/mult_gen_0/sim/mult_gen_0.vhd" \

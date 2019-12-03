@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="dual_port_acf_bram_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1575339100">
+<GenRun Id="dual_port_acf_bram_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1575345947">
   <File Type="PA-TCL" Name="dual_port_acf_bram.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="dual_port_acf_bram_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="dual_port_acf_bram_reports.tcl"/>
   <File Type="RDS-RDS" Name="dual_port_acf_bram.vds"/>
   <File Type="RDS-UTIL" Name="dual_port_acf_bram_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="dual_port_acf_bram_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="dual_port_acf_bram.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dual_port_acf_bram_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="dual_port_acf_bram_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dual_port_acf_bram">
     <File Path="$PSRCDIR/sources_1/ip/dual_port_acf_bram/dual_port_acf_bram.xci">
       <FileInfo>

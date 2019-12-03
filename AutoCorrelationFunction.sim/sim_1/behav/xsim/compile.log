@@ -1,3 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/binMultiplexer_PL.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binMultiplexer_PL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/edgeDetect.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_Detect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module niBlock_s_PL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/streamtoFIFO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamToFIFO
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tdc_PL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myHWCorrelator_PL_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myHWCorrelator_PL_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myMultAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/Z_Block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Z_Block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/streamToFIFO_v2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamToFIFO_v2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/sim/myHWCorrelator_PL_top_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myHWCorrelator_PL_top_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/dual_port_acf_bram/sim/dual_port_acf_bram.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dual_port_acf_bram
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0.v" into library xil_defaultlib
@@ -7,3 +31,9 @@ INFO: [VRFC 10-311] analyzing module AutoCorrelationFunction_v1_0_S00_AXI
 WARNING: [VRFC 10-3380] identifier 'acfRdData' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:388]
 WARNING: [VRFC 10-3380] identifier 'initTx' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:450]
 WARNING: [VRFC 10-3380] identifier 'wrEn' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:455]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/c_counter_binary_0/sim/c_counter_binary_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'c_counter_binary_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/mult_gen_0/sim/mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/xbip_multadd_0/sim/xbip_multadd_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xbip_multadd_0'

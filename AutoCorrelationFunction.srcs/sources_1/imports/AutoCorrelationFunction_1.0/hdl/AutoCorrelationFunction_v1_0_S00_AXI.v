@@ -468,13 +468,7 @@
     assign diag[2] = acfDataComplete;
     assign diag[3] = CH1;
         
-    myHWCorrelator_PL_top_0 #(
-        .PRECNTSHIFT(PRECNTSHIFT),
-        .MIN_NI_WIDTH(MIN_NI_WIDTH),
-        .NIBUSWIDTH(NIBUSWIDTH),
-        .NUM_CHANS(NUM_CHANS),
-        .S_BLOCKS(S_BLOCKS)
-    ) acf (
+    myHWCorrelator_PL_top_0 acf_core (
         .sys_clk(S_AXI_ACLK),     //system clock 128 MHz design
         .smpl_clk(smpl_clk),        //sample clock 256 MHz design
         .rst(~S_AXI_ARESETN),      //reset signal
