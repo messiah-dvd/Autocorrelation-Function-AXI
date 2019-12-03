@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="myHWCorrelator_PL_top_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1575345947">
+<GenRun Id="myHWCorrelator_PL_top_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1575383275">
   <File Type="PA-TCL" Name="myHWCorrelator_PL_top_0.tcl"/>
   <File Type="REPORTS-TCL" Name="myHWCorrelator_PL_top_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="myHWCorrelator_PL_top_0.vds"/>
+  <File Type="RDS-UTIL" Name="myHWCorrelator_PL_top_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="myHWCorrelator_PL_top_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="myHWCorrelator_PL_top_0.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/myHWCorrelator_PL_top_0">
     <File Path="$PSRCDIR/sources_1/ip/myHWCorrelator_PL_top_0/myHWCorrelator_PL_top_0.xci">

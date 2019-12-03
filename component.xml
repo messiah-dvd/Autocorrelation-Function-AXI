@@ -264,7 +264,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4477bc3d</spirit:value>
+            <spirit:value>50435abc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -286,7 +286,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4477bc3d</spirit:value>
+            <spirit:value>50435abc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -862,7 +862,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>AutoCorrelationFunction_v1_2</spirit:description>
+  <spirit:description>AutoCorrelationFuntion AXI-Lite wrapped, 16 time bins, 0.6s resolution</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>CNT_SIZE</spirit:name>
@@ -949,25 +949,26 @@
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>messiah.edu:user:AutoCorrelationFunction_v1_0:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2019-12-03T13:09:18Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2019-12-03T15:33:59Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f786c76_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@23075bf7_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f60f2ad_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b31bac0_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c212e6e_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5eb2185f_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@460d7aee_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6903bd17_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d2085be_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@43ae1cc1_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@555901df_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48ddde8b_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39f901c8_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8fc227c_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38461afa_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e0705c7_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@318c394c_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@767be9c4_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33e33d66_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b50cec9_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7af322cc_ARCHIVE_LOCATION">c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="22421efb"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="871c369d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="033f5136"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="30b4c811"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="7fa72fd9"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="847a1c42"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="65c51c32"/>
