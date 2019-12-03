@@ -325,7 +325,7 @@
 	    end 
 	  else
 	    begin    
-	      if (~axi_arready && S_AXI_ARVALID && acfDataComplete)
+	      if (~axi_arready && S_AXI_ARVALID)
 	        begin
 	        $display("setting axi_arready");
 	          // indicates that the slave has acceped the valid read address
@@ -400,7 +400,7 @@
 	      // When there is a valid read address (S_AXI_ARVALID) with 
 	      // acceptance of read address by the slave (axi_arready), 
 	      // output the read dada 
-	      if (slv_reg_rden & acfDataComplete) // only send data if the ACF has finished running
+	      if (slv_reg_rden)
 	        begin
 	          axi_rdata <= reg_data_out;     // register read data
 	          
@@ -409,18 +409,18 @@
 	end    
 
 	// Add user logic here
-	wire acfWrEn;
+	reg acfWrEn;
 	wire [7:0] acfAddr;
 	reg [63:0] acfWrData;
 	wire [63:0] acfRdData;
     reg [31:0] dataCount;
-    reg transmissionJustStarted;
     wire acfDataComplete;
+    wire [63:0] acfEl;
 	
 	// if the ACF isn't finished, the BRAM address will point to the next acf element
 	// otherwise, it will point to the axi slave read address
 	// essentially allowing the slave AXI device to read from the BRAM
-	assign acfAddr = ({8{acfDataComplete}} & axi_araddr) | ({31{!acfDataComplete}} & (dataCount - 1));
+//	assign acfwAddr = ({8{acfDataComplete}} & axi_araddr) | ({31{!acfDataComplete}} & (dataCount - 1));
 	
 	// You must regenerate this IP with the proper depth if you change NUM_CHANS to something other than 8
 	// depth must be at least 30 * NUM_CHANS + 1
@@ -431,42 +431,44 @@
 //        .dina(acfWrData),   // input wire [63 : 0] dina
 //        .douta(acfRdData)   // output wire [63 : 0] doutb
 //    );
-    single_port_bram #(.ADDR_WIDTH(8), .DATA_WIDTH(64), .DEPTH(30*NUM_CHANS+1)) acf_data (
-        .i_clk(S_AXI_ACLK),
-        .i_addr(acfAddr),
-        .i_write(acfWrEn),
-        .i_data(acfWrData),
-        .o_data(acfRdData)
+    dual_port_acf_bram acf_data (
+        // write port
+        .clka(S_AXI_ACLK),
+        .addra(dataCount),
+        .wea(acfWrEn),
+        .dina(acfWrData),
+        .ena(acfWrEn),
+        // read port
+        .clkb(S_AXI_ACLK),
+        .addrb(axi_araddr),
+        .doutb(acfRdData),
+        .enb(1'b1)
     );
     
-    assign acfDataComplete = dataCount == 32'ha9;//(30 * NUM_CHANS);
-    assign acfWrEn = !acfDataComplete;
+    assign acfDataComplete = dataCount == 32'hA8; // Not sure why it's stopping at A8. Expecting 241: (30 * NUM_CHANS + 1);
     
-    always @(posedge initTx)
-        transmissionJustStarted <= 0;
+    always @(posedge initTx) begin
+        dataCount <= -1; // it will increment to zero for the first element, which is the photon count
+        acfWrEn <= 1;
+    end
     
     always @(posedge wrEn) begin
-        if (transmissionJustStarted == 0) begin
-            dataCount <= 0;
-        end else begin
-            dataCount <= dataCount + 1;
-        end
+        dataCount <= dataCount + 1;
         acfWrData <= acfEl;
     end
     
     wire CE, initTx, wrEn, cntFinished;
     wire [CNT_SIZE-1:0] maxCnt;
-    wire [63:0] acfEl;
     assign maxCnt[31:0] = slv_reg0;
     assign maxCnt[CNT_SIZE-1:32] = slv_reg1[31 -: CNT_SIZE-32];
     assign CE = slv_reg1[0];
     assign initTx = slv_reg2[0];
     assign diag[0] = CE;
     assign diag[1] = initTx;
-    assign diag[2] = cntFinished;
+    assign diag[2] = acfDataComplete;
     assign diag[3] = CH1;
         
-    myHWCorrelator_PL_top #(
+    myHWCorrelator_PL_top_0 #(
         .PRECNTSHIFT(PRECNTSHIFT),
         .MIN_NI_WIDTH(MIN_NI_WIDTH),
         .NIBUSWIDTH(NIBUSWIDTH),

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec  2 21:11:44 2019
+# Process ID: 18808
+# Current directory: C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/dual_port_acf_bram_synth_1
+# Command line: vivado.exe -log dual_port_acf_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dual_port_acf_bram.tcl
+# Log file: C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/dual_port_acf_bram_synth_1/dual_port_acf_bram.vds
+# Journal file: C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/dual_port_acf_bram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dual_port_acf_bram.tcl -notrace
