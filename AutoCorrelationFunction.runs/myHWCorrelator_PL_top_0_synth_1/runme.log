@@ -9,6 +9,7 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source myHWCorrelator_PL_top_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 463.098 ; gain = 181.102
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vitis/Vivado/custom_ip_repo'.
 WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Vitis/Vivado/custom_ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1'.)
@@ -21,9 +22,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19684 
+INFO: Helper process launched with PID 26260 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1000.242 ; gain = 234.605
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 999.816 ; gain = 234.270
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'myHWCorrelator_PL_top_0' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/synth/myHWCorrelator_PL_top_0.sv:57]
 INFO: [Synth 8-6157] synthesizing module 'myHWCorrelator_PL_top' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myHWCorrelator_PL_top.sv:23]
@@ -31,9 +32,9 @@ INFO: [Synth 8-6157] synthesizing module 'myHWCorrelator_PL_top' [c:/Vitis/Vivad
 	Parameter MIN_NI_WIDTH bound to: 3 - type: integer 
 	Parameter NIBUSWIDTH bound to: 23 - type: integer 
 	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter S_BLOCKS bound to: 18 - type: integer 
+	Parameter S_BLOCKS bound to: 13 - type: integer 
 	Parameter CNT_SIZE bound to: 35 - type: integer 
-	Parameter wrDelay bound to: 15 - type: integer 
+	Parameter wrDelay bound to: 10 - type: integer 
 	Parameter rdDelay bound to: 0 - type: integer 
 	Parameter muxDelay bound to: 0 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
@@ -439,71 +440,6 @@ INFO: [Synth 8-4471] merging register 'newData_d_reg' into 'rdEn_reg' [c:/Vitis/
 WARNING: [Synth 8-6014] Unused sequential element newData_d_reg was removed.  [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
 INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized12' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized13' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized14' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-	Parameter NIBUSWIDTH bound to: 23 - type: integer 
-	Parameter NI_WIDTH bound to: 17 - type: integer 
-	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter CNT_SIZE bound to: 21 - type: integer 
-	Parameter BLOCK_HALF bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized13' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-	Parameter CNTSIZE bound to: 21 - type: integer 
-	Parameter MIN_DELAY bound to: 50 - type: integer 
-INFO: [Synth 8-4471] merging register 'newData_d_reg' into 'rdEn_reg' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-WARNING: [Synth 8-6014] Unused sequential element newData_d_reg was removed.  [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized13' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized14' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized15' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-	Parameter NIBUSWIDTH bound to: 23 - type: integer 
-	Parameter NI_WIDTH bound to: 18 - type: integer 
-	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter CNT_SIZE bound to: 20 - type: integer 
-	Parameter BLOCK_HALF bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized14' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-	Parameter CNTSIZE bound to: 20 - type: integer 
-	Parameter MIN_DELAY bound to: 50 - type: integer 
-INFO: [Synth 8-4471] merging register 'newData_d_reg' into 'rdEn_reg' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-WARNING: [Synth 8-6014] Unused sequential element newData_d_reg was removed.  [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized14' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized15' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized16' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-	Parameter NIBUSWIDTH bound to: 23 - type: integer 
-	Parameter NI_WIDTH bound to: 19 - type: integer 
-	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter CNT_SIZE bound to: 19 - type: integer 
-	Parameter BLOCK_HALF bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized15' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-	Parameter CNTSIZE bound to: 19 - type: integer 
-	Parameter MIN_DELAY bound to: 50 - type: integer 
-INFO: [Synth 8-4471] merging register 'newData_d_reg' into 'rdEn_reg' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-WARNING: [Synth 8-6014] Unused sequential element newData_d_reg was removed.  [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized15' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized16' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized17' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-	Parameter NIBUSWIDTH bound to: 23 - type: integer 
-	Parameter NI_WIDTH bound to: 20 - type: integer 
-	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter CNT_SIZE bound to: 18 - type: integer 
-	Parameter BLOCK_HALF bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized16' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-	Parameter CNTSIZE bound to: 18 - type: integer 
-	Parameter MIN_DELAY bound to: 50 - type: integer 
-INFO: [Synth 8-4471] merging register 'newData_d_reg' into 'rdEn_reg' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-WARNING: [Synth 8-6014] Unused sequential element newData_d_reg was removed.  [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized16' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized17' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'niBlock_s_PL__parameterized18' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
-	Parameter NIBUSWIDTH bound to: 23 - type: integer 
-	Parameter NI_WIDTH bound to: 21 - type: integer 
-	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter CNT_SIZE bound to: 17 - type: integer 
-	Parameter BLOCK_HALF bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized17' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-	Parameter CNTSIZE bound to: 17 - type: integer 
-	Parameter MIN_DELAY bound to: 50 - type: integer 
-INFO: [Synth 8-4471] merging register 'newData_d_reg' into 'rdEn_reg' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-WARNING: [Synth 8-6014] Unused sequential element newData_d_reg was removed.  [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized17' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'niBlock_s_PL__parameterized18' (31#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/niBlock_s_PL.sv:23]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:73]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -613,22 +549,22 @@ INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (38#1) [c:/Vitis/Vivad
 WARNING: [Synth 8-689] width (24) of port connection 'A' does not match port width (23) of module 'mult_gen_0' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:65]
 WARNING: [Synth 8-689] width (24) of port connection 'B' does not match port width (23) of module 'mult_gen_0' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:66]
 INFO: [Synth 8-6155] done synthesizing module 'myMultAdder' (39#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized18' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'tdc_PL__parameterized13' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
 	Parameter CNTSIZE bound to: 1 - type: integer 
 	Parameter MIN_DELAY bound to: 1 - type: integer 
 INFO: [Synth 8-4471] merging register 'newData_d_reg' into 'rdEn_reg' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
 WARNING: [Synth 8-6014] Unused sequential element newData_d_reg was removed.  [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized18' (39#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_PL__parameterized13' (39#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/tdc_PL.sv:23]
 WARNING: [Synth 8-7023] instance 'photonCounter' of module 'tdc_PL' has 8 connections declared, but only 7 given [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myHWCorrelator_PL_top.sv:114]
 INFO: [Synth 8-6157] synthesizing module 'streamToFIFO' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/streamtoFIFO.sv:22]
 	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter S_BLOCKS bound to: 18 - type: integer 
+	Parameter S_BLOCKS bound to: 13 - type: integer 
 	Parameter latDelay bound to: 2 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'streamToFIFO' (40#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/streamtoFIFO.sv:22]
 INFO: [Synth 8-6157] synthesizing module 'binMultiplexer_PL' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/binMultiplexer_PL.sv:23]
 	Parameter NIBUSWIDTH bound to: 23 - type: integer 
 	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter S_BLOCKS bound to: 18 - type: integer 
+	Parameter S_BLOCKS bound to: 13 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'binMultiplexer_PL' (41#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/binMultiplexer_PL.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'edge_Detect' [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/edgeDetect.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'edge_Detect' (42#1) [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/edgeDetect.sv:23]
@@ -763,7 +699,7 @@ WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnec
 WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port DOUTA_I[10]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1486.680 ; gain = 721.043
+Finished RTL Elaboration : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 1485.078 ; gain = 719.531
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -776,13 +712,13 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1486.680 ; gain = 721.043
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1485.078 ; gain = 719.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1486.680 ; gain = 721.043
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1485.078 ; gain = 719.531
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1486.680 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 466 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1485.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 361 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -800,16 +736,6 @@ Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/Au
 Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[13].niblock/tdc_pl/smallFIFO/U0'
 Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0'
 Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0'
 Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0'
 Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0'
 Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/genblk1[2].niblock/tdc_pl/smallFIFO/U0'
@@ -848,16 +774,6 @@ Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/Au
 Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[13].niblock/tdc_pl/smallFIFO/U0'
 Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0'
 Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0'
-Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0'
-Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0'
 Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0'
 Finished Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0'
 Parsing XDC File [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'inst/genblk1[2].niblock/tdc_pl/smallFIFO/U0'
@@ -902,26 +818,6 @@ Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
@@ -986,26 +882,6 @@ Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.t
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
@@ -1072,26 +948,6 @@ Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[14].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[15].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[16].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[17].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[18].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
-Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
-Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[19].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
 Finished Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
 Sourcing Tcl File [C:/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/genblk1[1].niblock/tdc_pl/smallFIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
@@ -1136,20 +992,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/myHWCorrelator_PL_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1489.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1485.078 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1490.035 ; gain = 0.500
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1485.078 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:25 ; elapsed = 00:02:29 . Memory (MB): peak = 1490.035 ; gain = 724.398
+Finished Constraint Validation : Time (s): cpu = 00:02:14 ; elapsed = 00:02:19 . Memory (MB): peak = 1485.078 ; gain = 719.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:25 ; elapsed = 00:02:29 . Memory (MB): peak = 1490.035 ; gain = 724.398
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:14 ; elapsed = 00:02:19 . Memory (MB): peak = 1485.078 ; gain = 719.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1160,11 +1016,6 @@ Applied set_property DONT_TOUCH = true for inst/\genblk1[11].niblock /tdc_pl/sma
 Applied set_property DONT_TOUCH = true for inst/\genblk1[12].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[13].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[14].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[15].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[16].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[17].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[18].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[19].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[1].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[2].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[3].niblock /tdc_pl/smallFIFO/U0. (constraint file  C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/dont_touch.xdc, line 23).
@@ -1190,11 +1041,6 @@ Applied set_property DONT_TOUCH = true for inst/\genblk1[11].niblock /tdc_pl/sma
 Applied set_property DONT_TOUCH = true for inst/\genblk1[12].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[13].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[14].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[15].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[16].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[17].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[18].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[19].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[1].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[2].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[3].niblock /tdc_pl/smallFIFO. (constraint file  auto generated constraint, line ).
@@ -1229,11 +1075,6 @@ Applied set_property DONT_TOUCH = true for inst/\genblk1[11].niblock /tdc_pl/sma
 Applied set_property DONT_TOUCH = true for inst/\genblk1[12].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[13].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[14].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[15].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[16].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[17].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[18].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[19].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/photonCounter/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[0].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[1].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
@@ -1250,11 +1091,6 @@ Applied set_property DONT_TOUCH = true for inst/\genblk1[11].niblock /tdc_pl/sma
 Applied set_property DONT_TOUCH = true for inst/\genblk1[12].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[13].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[14].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[15].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[16].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[17].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[18].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[19].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/photonCounter/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[0].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[1].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
@@ -1271,11 +1107,6 @@ Applied set_property DONT_TOUCH = true for inst/\genblk1[11].niblock /tdc_pl/sma
 Applied set_property DONT_TOUCH = true for inst/\genblk1[12].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[13].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[14].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[15].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[16].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[17].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[18].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[19].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/photonCounter/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[0].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[1].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
@@ -1292,11 +1123,6 @@ Applied set_property DONT_TOUCH = true for inst/\genblk1[11].niblock /tdc_pl/sma
 Applied set_property DONT_TOUCH = true for inst/\genblk1[12].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[13].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[14].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[15].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[16].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[17].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[18].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[19].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/photonCounter/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[0].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[1].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
@@ -1313,11 +1139,6 @@ Applied set_property DONT_TOUCH = true for inst/\genblk1[11].niblock /tdc_pl/sma
 Applied set_property DONT_TOUCH = true for inst/\genblk1[12].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[13].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[14].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[15].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[16].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[17].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[18].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[19].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/photonCounter/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[0].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[1].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
@@ -1334,26 +1155,21 @@ Applied set_property DONT_TOUCH = true for inst/\genblk1[11].niblock /tdc_pl/sma
 Applied set_property DONT_TOUCH = true for inst/\genblk1[12].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[13].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/\genblk1[14].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[15].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[16].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[17].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[18].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for inst/\genblk1[19].niblock /tdc_pl/smallFIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:27 ; elapsed = 00:02:30 . Memory (MB): peak = 1490.035 ; gain = 724.398
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:15 ; elapsed = 00:02:20 . Memory (MB): peak = 1485.078 ; gain = 719.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:45 ; elapsed = 00:02:50 . Memory (MB): peak = 1490.035 ; gain = 724.398
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:26 ; elapsed = 00:02:31 . Memory (MB): peak = 1485.078 ; gain = 719.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |myHWCorrelator_PL_top__GB0 |           1|     30051|
-|2     |myHWCorrelator_PL_top__GB1 |           1|     22496|
-|3     |myHWCorrelator_PL_top__GB2 |           1|     18313|
-|4     |myHWCorrelator_PL_top__GB3 |           1|     21166|
+|1     |myHWCorrelator_PL_top__GB0 |           1|     24756|
+|2     |myHWCorrelator_PL_top__GB1 |           1|     13531|
+|3     |myHWCorrelator_PL_top__GB2 |           1|     13198|
+|4     |myHWCorrelator_PL_top__GB3 |           1|     12200|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1388,75 +1204,42 @@ WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers 
 WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:49]
 WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:49]
 WARNING: [Synth 8-5409] Adder 'D_d0' is implemented in DSP cascade. 2 registers following 'D_d0' are needed to fully pipeline the cascade, 1 are found. [c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:49]
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[16]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[17]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[17]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[18]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[18]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[19]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[19]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[20]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[20]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/presentTimeSync_reg[21]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[14].niblock /\tdc_pl/presentTimeSync_reg[21] )
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[17]' (FD) to 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[18]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[18]' (FD) to 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[19]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[19]' (FD) to 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[20]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[20]' (FD) to 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[21]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[21]' (FD) to 'insti_0/genblk1[13].niblock/tdc_pl/presentTimeSync_reg[22]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[13].niblock /\tdc_pl/presentTimeSync_reg[22] )
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[18]' (FD) to 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[19]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[19]' (FD) to 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[20]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[20]' (FD) to 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[21]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[21]' (FD) to 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[22]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[22]' (FD) to 'insti_0/genblk1[12].niblock/tdc_pl/presentTimeSync_reg[23]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[12].niblock /\tdc_pl/presentTimeSync_reg[23] )
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[19]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[20]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[20]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[21]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[21]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[22]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[22]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[23]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[23]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/presentTimeSync_reg[24]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[11].niblock /\tdc_pl/presentTimeSync_reg[24] )
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[20]' (FD) to 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[21]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[21]' (FD) to 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[22]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[22]' (FD) to 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[23]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[23]' (FD) to 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[24]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[24]' (FD) to 'insti_0/genblk1[10].niblock/tdc_pl/presentTimeSync_reg[25]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[10].niblock /\tdc_pl/presentTimeSync_reg[25] )
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[21]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[22]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[22]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[23]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[23]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[24]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[24]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[25]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[25]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/presentTimeSync_reg[26]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[9].niblock /\tdc_pl/presentTimeSync_reg[26] )
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[22]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[23]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[23]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[24]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[24]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[25]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[25]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[26]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[26]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[27]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[27]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[28]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[28]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[29]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[29]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[30]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[30]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[31]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[32]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_d_reg[34]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[23]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[24]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[24]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[25]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[25]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[26]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[26]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[27]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[27]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[28]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[28]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[29]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[29]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[30]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[30]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[31]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[32]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_d_reg[34]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[24]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[25]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[25]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[26]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[26]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[27]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[27]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[28]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[28]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[29]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[29]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[30]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[30]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[31]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[32]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[12].niblock/tdc_pl/deltaT_d_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[22]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[23]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[23]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[24]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[24]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[25]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[25]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[26]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[26]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/presentTimeSync_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[8].niblock /\tdc_pl/presentTimeSync_reg[27] )
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[23]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[24]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[24]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[25]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[25]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[26]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[26]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[27]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[27]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/presentTimeSync_reg[28]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[7].niblock /\tdc_pl/presentTimeSync_reg[28] )
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[24]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[25]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[25]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[26]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[26]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[27]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[27]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[28]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[28]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/presentTimeSync_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[6].niblock /\tdc_pl/presentTimeSync_reg[29] )
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[25]' (FD) to 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[26]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[26]' (FD) to 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[27]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[27]' (FD) to 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[28]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[28]' (FD) to 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[29]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[29]' (FD) to 'insti_0/genblk1[5].niblock/tdc_pl/presentTimeSync_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[5].niblock /\tdc_pl/presentTimeSync_reg[30] )
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[25]' (FDE) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[26]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[26]' (FDE) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[27]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[27]' (FDE) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[28]'
@@ -1466,14 +1249,6 @@ INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[32]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[33]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_d_reg[34]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[26]' (FDE) to 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[27]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[27]' (FDE) to 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[28]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[28]' (FDE) to 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[29]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[29]' (FDE) to 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[30]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[30]' (FDE) to 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[31]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[32]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[10].niblock/tdc_pl/deltaT_d_reg[34]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[27]' (FDE) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[28]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[28]' (FDE) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[29]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[29]' (FDE) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[30]'
@@ -1481,155 +1256,196 @@ INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[32]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[33]'
 INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_d_reg[34]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[22]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[23]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[24]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[25]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[26]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[27]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[28]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[29]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[30]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[31]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[32]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[33]' (FD) to 'insti_0/genblk1[14].niblock/tdc_pl/deltaT_q_reg[34]'
-INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_q_reg[23]' (FD) to 'insti_0/genblk1[13].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[28]' (FDE) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[29]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[29]' (FDE) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[30]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[30]' (FDE) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[31]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[32]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_d_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[29]' (FDE) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[30]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[30]' (FDE) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[31]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[32]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_d_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_d_reg[30]' (FDE) to 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_d_reg[31]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_d_reg[32]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_d_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_d_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_d_reg[31]' (FDE) to 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_d_reg[32]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_d_reg[32]' (FDE) to 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_d_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_d_reg[33]' (FDE) to 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_d_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[25]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[26]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[27]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[28]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[29]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[30]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[31]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[32]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[33]' (FD) to 'insti_0/genblk1[11].niblock/tdc_pl/deltaT_q_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[27]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[28]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[29]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[30]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[31]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[32]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[33]' (FD) to 'insti_0/genblk1[9].niblock/tdc_pl/deltaT_q_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[28]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[29]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[30]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[31]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[32]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[33]' (FD) to 'insti_0/genblk1[8].niblock/tdc_pl/deltaT_q_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[29]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[30]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[31]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[32]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[33]' (FD) to 'insti_0/genblk1[7].niblock/tdc_pl/deltaT_q_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_q_reg[30]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_q_reg[31]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_q_reg[32]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_q_reg[33]' (FD) to 'insti_0/genblk1[6].niblock/tdc_pl/deltaT_q_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_q_reg[31]' (FD) to 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_q_reg[32]' (FD) to 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_q_reg[33]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_q_reg[33]' (FD) to 'insti_0/genblk1[5].niblock/tdc_pl/deltaT_q_reg[34]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/shift_reg[2]' (FDRE) to 'insti_0/genblk1[6].niblock/shift_reg[1]'
+INFO: [Synth 8-3886] merging instance 'insti_0/genblk1[6].niblock/shift_reg[1]' (FDRE) to 'insti_0/genblk1[6].niblock/shift_reg[0]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[10].niblock /\shift_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[12].niblock /\shift_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[14].niblock /\shift_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[14].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[13].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[12].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[6].niblock /\shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[8].niblock /\shift_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[11].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[10].niblock /\niCC_d_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[9].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[8].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[7].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[6].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[5].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[5].niblock /\tdc_pl/last1_q_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[6].niblock /\tdc_pl/last1_q_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[7].niblock /\tdc_pl/last1_q_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[8].niblock /\tdc_pl/last1_q_reg[27] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[9].niblock /\tdc_pl/last1_q_reg[26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[10].niblock /\tdc_pl/last1_q_reg[25] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[11].niblock /\tdc_pl/last1_q_reg[24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[12].niblock /\tdc_pl/last1_q_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[13].niblock /\tdc_pl/last1_q_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[14].niblock /\tdc_pl/last1_q_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[14].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[13].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[12].niblock /\niCC_q_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[11].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[10].niblock /\niCC_q_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[9].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[0].niblock /\tdc_pl/presentTimeSync_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[8].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[7].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[6].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_0/\genblk1[5].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[1].niblock /\tdc_pl/presentTimeSync_reg[34] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[3].niblock /\tdc_pl/presentTimeSync_reg[32] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[4].niblock /\tdc_pl/presentTimeSync_reg[31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[5].niblock /\tdc_pl/presentTimeSync_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[6].niblock /\tdc_pl/presentTimeSync_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[7].niblock /\tdc_pl/presentTimeSync_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[8].niblock /\tdc_pl/presentTimeSync_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[10].niblock /\tdc_pl/presentTimeSync_reg[25] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[2].niblock /\tdc_pl/presentTimeSync_reg[33] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[8].niblock /\shift_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[6].niblock /\shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[10].niblock /\shift_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[4].niblock /\shift_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[2].niblock /\shift_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[0].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[8].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[7].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[6].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[5].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[10].niblock /\niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[1].niblock /\niCC_d_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[4].niblock /\niCC_d_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[3].niblock /\niCC_d_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[2].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[0].niblock /\tdc_pl/last1_q_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[1].niblock /\tdc_pl/last1_q_reg[34] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[3].niblock /\tdc_pl/last1_q_reg[32] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[4].niblock /\tdc_pl/last1_q_reg[31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[5].niblock /\tdc_pl/last1_q_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[6].niblock /\tdc_pl/last1_q_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[7].niblock /\tdc_pl/last1_q_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[8].niblock /\tdc_pl/last1_q_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[10].niblock /\tdc_pl/last1_q_reg[25] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[2].niblock /\tdc_pl/last1_q_reg[33] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[0].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[8].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[7].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[6].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[5].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[10].niblock /\niCC_q_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[1].niblock /\niCC_q_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[4].niblock /\niCC_q_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[3].niblock /\niCC_q_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_1/\genblk1[2].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[15].niblock /\tdc_pl/presentTimeSync_reg[20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[16].niblock /\tdc_pl/presentTimeSync_reg[19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[19].niblock /\tdc_pl/presentTimeSync_reg[16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[19].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[16].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[15].niblock /\niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[1].niblock/niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[15].niblock /\tdc_pl/last1_q_reg[20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[16].niblock /\tdc_pl/last1_q_reg[19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[19].niblock /\tdc_pl/last1_q_reg[16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[19].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[16].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[15].niblock /\niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[1].niblock/niCC_q_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/photonCounter/\presentTimeSync_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/tdc_pl /\presentTimeSync_reg[17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[17].niblock/tdc_pl /\presentTimeSync_reg[18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[17].niblock/niCC_d_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/photonCounter/\last1_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/tdc_pl /\last1_q_reg[17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[17].niblock/tdc_pl /\last1_q_reg[18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[8][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[8][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[8][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[7][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[7][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[7][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[6][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[6][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[6][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[5][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[5][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[5][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[4][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[4][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\genblk1[18].niblock/niCC_q_reg[4][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[13].niblock/tdc_pl /\presentTimeSync_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/tdc_pl /\presentTimeSync_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[12].niblock/tdc_pl /\presentTimeSync_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[12].niblock/shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[13].niblock/niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[12].niblock/niCC_d_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[13].niblock/tdc_pl /\last1_q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/tdc_pl /\last1_q_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[12].niblock/tdc_pl /\last1_q_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[8][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[8][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[8][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[8][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[8][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[8][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[8][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[7][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[7][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[7][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[7][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[7][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[7][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[7][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[6][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[6][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[6][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[6][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[6][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[6][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[6][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[5][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[5][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[5][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[5][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[5][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[5][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[5][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[4][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[4][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[4][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[4][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[4][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[4][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[4][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[3][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[3][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[3][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[3][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\genblk1[14].niblock/niCC_q_reg[3][20] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:35 ; elapsed = 00:11:47 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:55 ; elapsed = 00:07:03 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |myHWCorrelator_PL_top__GB0 |           1|     24430|
-|2     |myHWCorrelator_PL_top__GB1 |           1|     17023|
-|3     |myHWCorrelator_PL_top__GB2 |           1|     16239|
-|4     |myHWCorrelator_PL_top__GB3 |           1|     18456|
+|1     |myHWCorrelator_PL_top__GB0 |           1|     20527|
+|2     |myHWCorrelator_PL_top__GB1 |           1|     10053|
+|3     |myHWCorrelator_PL_top__GB2 |           1|     11132|
+|4     |myHWCorrelator_PL_top__GB3 |           1|      9343|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:55 ; elapsed = 00:12:06 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:19 ; elapsed = 00:07:27 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:12:00 ; elapsed = 00:12:12 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Timing Optimization : Time (s): cpu = 00:07:23 ; elapsed = 00:07:31 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |myHWCorrelator_PL_top__GB0 |           1|     24430|
-|2     |myHWCorrelator_PL_top__GB1 |           1|     17023|
-|3     |myHWCorrelator_PL_top__GB2 |           1|     16239|
-|4     |myHWCorrelator_PL_top__GB3 |           1|     18456|
+|1     |myHWCorrelator_PL_top__GB0 |           1|     20527|
+|2     |myHWCorrelator_PL_top__GB1 |           1|     10053|
+|3     |myHWCorrelator_PL_top__GB2 |           1|     11132|
+|4     |myHWCorrelator_PL_top__GB3 |           1|      9343|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:12:29 ; elapsed = 00:12:46 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Technology Mapping : Time (s): cpu = 00:07:43 ; elapsed = 00:07:54 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1653,13 +1469,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:12:39 ; elapsed = 00:12:56 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished IO Insertion : Time (s): cpu = 00:07:53 ; elapsed = 00:08:03 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:12:39 ; elapsed = 00:12:56 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:53 ; elapsed = 00:08:03 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1678,25 +1494,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:12:44 ; elapsed = 00:13:01 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:57 ; elapsed = 00:08:08 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:12:45 ; elapsed = 00:13:01 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:58 ; elapsed = 00:08:08 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:12:51 ; elapsed = 00:13:07 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:00 ; elapsed = 00:08:10 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:12:51 ; elapsed = 00:13:08 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:00 ; elapsed = 00:08:11 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1712,64 +1528,64 @@ Report Cell Usage:
 +------+----------+------+
 |      |Cell      |Count |
 +------+----------+------+
-|1     |CARRY4    |   257|
-|2     |DSP48E1_1 |     1|
-|3     |DSP48E1_2 |     8|
-|4     |DSP48E1_3 |     8|
-|5     |DSP48E1_4 |     8|
-|6     |DSP48E1_7 |     5|
-|7     |DSP48E1_8 |     8|
-|8     |LUT1      |   308|
-|9     |LUT2      |  1939|
-|10    |LUT3      |  2042|
-|11    |LUT4      |  3848|
-|12    |LUT5      |  3157|
-|13    |LUT6      | 10679|
-|14    |MUXCY     |   420|
-|15    |MUXF7     |   182|
-|16    |RAMB18E1  |    21|
+|1     |CARRY4    |   214|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     8|
+|4     |DSP48E1_2 |     8|
+|5     |DSP48E1_3 |     8|
+|6     |DSP48E1_5 |     8|
+|7     |LUT1      |   236|
+|8     |LUT2      |  1712|
+|9     |LUT3      |  1402|
+|10    |LUT4      |  2204|
+|11    |LUT5      |  1830|
+|12    |LUT6      |  5617|
+|13    |MUXCY     |   320|
+|14    |MUXF7     |    81|
+|15    |MUXF8     |    29|
+|16    |RAMB18E1  |    16|
 |17    |RAMB36E1  |     8|
 |18    |SRL16E    |   512|
-|19    |FDCE      |  1071|
-|20    |FDPE      |   483|
-|21    |FDRE      | 17432|
-|22    |FDSE      |     4|
+|19    |FDCE      |   816|
+|20    |FDPE      |   368|
+|21    |FDRE      | 13008|
+|22    |FDSE      |     2|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:12:51 ; elapsed = 00:13:08 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:00 ; elapsed = 00:08:11 . Memory (MB): peak = 1550.641 ; gain = 785.094
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:10:34 ; elapsed = 00:12:37 . Memory (MB): peak = 1703.191 ; gain = 934.199
-Synthesis Optimization Complete : Time (s): cpu = 00:12:51 ; elapsed = 00:13:08 . Memory (MB): peak = 1703.191 ; gain = 937.555
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:54 ; elapsed = 00:07:47 . Memory (MB): peak = 1550.641 ; gain = 785.094
+Synthesis Optimization Complete : Time (s): cpu = 00:08:01 ; elapsed = 00:08:11 . Memory (MB): peak = 1550.641 ; gain = 785.094
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1703.191 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 926 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1550.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 701 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1703.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1550.641 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 168 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 168 instances
+  A total of 128 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 128 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-355 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+330 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:13:13 ; elapsed = 00:13:31 . Memory (MB): peak = 1703.191 ; gain = 1212.898
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1703.191 ; gain = 0.000
+synth_design: Time (s): cpu = 00:08:22 ; elapsed = 00:08:33 . Memory (MB): peak = 1550.641 ; gain = 1058.738
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1550.641 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/myHWCorrelator_PL_top_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1703.191 ; gain = 0.000
-write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1703.191 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1550.641 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1550.641 ; gain = 0.000
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP myHWCorrelator_PL_top_0, cache-ID = 7e98d66e3b275c99
-INFO: [Coretcl 2-1174] Renamed 806 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1703.191 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP myHWCorrelator_PL_top_0, cache-ID = 8a1cf84685c3ce62
+INFO: [Coretcl 2-1174] Renamed 641 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1550.641 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/myHWCorrelator_PL_top_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1703.191 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1550.641 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file myHWCorrelator_PL_top_0_utilization_synth.rpt -pb myHWCorrelator_PL_top_0_utilization_synth.pb
-write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1703.191 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 09:42:24 2019...
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1550.641 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 09:42:35 2019...

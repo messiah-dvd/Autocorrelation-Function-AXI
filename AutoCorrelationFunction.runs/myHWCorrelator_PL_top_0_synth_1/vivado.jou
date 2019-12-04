@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Dec  3 09:27:59 2019
-# Process ID: 20032
+# Start of session at: Wed Dec  4 09:33:03 2019
+# Process ID: 22648
 # Current directory: C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1
 # Command line: vivado.exe -log myHWCorrelator_PL_top_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myHWCorrelator_PL_top_0.tcl
 # Log file: C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/myHWCorrelator_PL_top_0_synth_1/myHWCorrelator_PL_top_0.vds

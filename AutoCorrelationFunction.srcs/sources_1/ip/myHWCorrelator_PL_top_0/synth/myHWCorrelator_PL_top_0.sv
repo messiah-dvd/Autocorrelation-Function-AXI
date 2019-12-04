@@ -89,7 +89,7 @@ output wire [63 : 0] acfEl;
     .MIN_NI_WIDTH(3),
     .NIBUSWIDTH(23),
     .NUM_CHANS(8),
-    .S_BLOCKS(16)
+    .S_BLOCKS(13)
   ) inst (
     .sys_clk(sys_clk),
     .smpl_clk(smpl_clk),

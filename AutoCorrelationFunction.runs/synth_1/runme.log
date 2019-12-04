@@ -9,6 +9,7 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source AutoCorrelationFunction_v1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 461.570 ; gain = 181.629
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vitis/Vivado/custom_ip_repo'.
 WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Vitis/Vivado/custom_ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1'.)
@@ -21,43 +22,33 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18452 
-WARNING: [Synth 8-2490] overwriting previous definition of module myHWCorrelator_PL_top_0 [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11044-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
-WARNING: [Synth 8-6901] identifier 'acfRdData' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:388]
+INFO: Helper process launched with PID 3704 
+WARNING: [Synth 8-2490] overwriting previous definition of module myHWCorrelator_PL_top_0 [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-15440-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
+WARNING: [Synth 8-6901] identifier 'acfRdData' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6901] identifier 'initTx' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:446]
+WARNING: [Synth 8-6901] identifier 'wrEn' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:450]
 WARNING: [Synth 8-6901] identifier 'initTx' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:451]
-WARNING: [Synth 8-6901] identifier 'wrEn' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:455]
-WARNING: [Synth 8-6901] identifier 'initTx' is used before its declaration [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:456]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1008.672 ; gain = 242.359
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1009.004 ; gain = 242.336
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelationFunction_v1_0' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0.v:3]
 	Parameter CNT_SIZE bound to: 35 - type: integer 
-	Parameter PRECNTSHIFT bound to: 6 - type: integer 
-	Parameter MIN_NI_WIDTH bound to: 3 - type: integer 
-	Parameter NIBUSWIDTH bound to: 23 - type: integer 
-	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter S_BLOCKS bound to: 20 - type: integer 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 10 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelationFunction_v1_0_S00_AXI' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:4]
 	Parameter CNT_SIZE bound to: 35 - type: integer 
-	Parameter PRECNTSHIFT bound to: 6 - type: integer 
-	Parameter MIN_NI_WIDTH bound to: 3 - type: integer 
-	Parameter NIBUSWIDTH bound to: 23 - type: integer 
-	Parameter NUM_CHANS bound to: 8 - type: integer 
-	Parameter S_BLOCKS bound to: 20 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
-INFO: [Synth 8-251] setting axi_arready [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:330]
-INFO: [Synth 8-6157] synthesizing module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11044-Frey70Twr-W10D/realtime/dual_port_acf_bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dual_port_acf_bram' (1#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11044-Frey70Twr-W10D/realtime/dual_port_acf_bram_stub.v:6]
-WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:438]
-WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (8) of module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:444]
-INFO: [Synth 8-6157] synthesizing module 'myHWCorrelator_PL_top_0' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11044-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'myHWCorrelator_PL_top_0' (2#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-11044-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:233]
+INFO: [Synth 8-251] setting axi_arready [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:325]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-15440-Frey70Twr-W10D/realtime/dual_port_acf_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_acf_bram' (1#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-15440-Frey70Twr-W10D/realtime/dual_port_acf_bram_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:433]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (8) of module 'dual_port_acf_bram' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:439]
+INFO: [Synth 8-6157] synthesizing module 'myHWCorrelator_PL_top_0' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-15440-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myHWCorrelator_PL_top_0' (2#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/.Xil/Vivado-15440-Frey70Twr-W10D/realtime/myHWCorrelator_PL_top_0_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:228]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelationFunction_v1_0_S00_AXI' (3#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelationFunction_v1_0' (4#1) [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0.v:3]
 WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
@@ -67,7 +58,7 @@ WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnec
 WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design AutoCorrelationFunction_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1178.852 ; gain = 412.184
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -80,12 +71,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1178.852 ; gain = 412.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1178.852 ; gain = 412.184
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1179.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1178.852 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -98,20 +89,20 @@ CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_generator_0'
 CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_generator_0'. The XDC file c:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc will not be read for any cell of this module.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1179.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1215.672 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1179.109 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1215.672 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -119,10 +110,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf_core. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for AutoCorrelationFunction_v1_0_S00_AXI_inst/acf_data. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -189,11 +180,11 @@ INFO: [Synth 8-3886] merging instance 'AutoCorrelationFunction_v1_0_S00_AXI_inst
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AutoCorrelationFunction_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acfWrEn_reg/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:462]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:462]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:462]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'AutoCorrelationFunction_v1_0_S00_AXI_inst/acfWrEn_reg/Q' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:457]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:457]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:457]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -205,13 +196,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -223,7 +214,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.109 ; gain = 412.797
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -247,13 +238,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.160 ; gain = 417.848
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.160 ; gain = 417.848
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -272,25 +263,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.160 ; gain = 417.848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.160 ; gain = 417.848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.160 ; gain = 417.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.160 ; gain = 417.848
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -332,28 +323,28 @@ Report Instance Areas:
 |2     |  AutoCorrelationFunction_v1_0_S00_AXI_inst |AutoCorrelationFunction_v1_0_S00_AXI |   375|
 +------+--------------------------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.160 ; gain = 417.848
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1215.672 ; gain = 449.004
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 3 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:54 . Memory (MB): peak = 1184.160 ; gain = 417.848
-Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1184.160 ; gain = 417.848
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:00 . Memory (MB): peak = 1215.672 ; gain = 412.184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1215.672 ; gain = 449.004
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1193.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1215.672 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1202.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1215.672 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 27 Infos, 22 Warnings, 5 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 1202.723 ; gain = 710.688
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1202.723 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 1215.672 ; gain = 724.293
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1215.672 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.runs/synth_1/AutoCorrelationFunction_v1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file AutoCorrelationFunction_v1_0_utilization_synth.rpt -pb AutoCorrelationFunction_v1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 09:43:46 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 09:44:08 2019...
