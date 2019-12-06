@@ -87,7 +87,7 @@ initial begin
     @(negedge rst);
         #205
         axi_write(32'd0, 32'd10000); // write maxCnt = 10000 to ACF IP
-        axi_write(32'd1, 32'd1); // write CE = 1 to ACF IP
+        axi_write(32'd4, 32'd1); // write CE = 1 to ACF IP
         #10
         CH1 = 1'b1;
         #10
@@ -141,8 +141,8 @@ initial begin
         #10
         CH1=1'b0;
         #1000
-        axi_write(32'd2, 32'd1); // write initTx = 1
-        axi_write(32'd2, 32'd0); // write initTx = 0
+        axi_write(32'd8, 32'd1); // write initTx = 1
+        axi_write(32'd8, 32'd0); // write initTx = 0
         #14000
         
         // Now that the ACF is finished being calculated, start reading it

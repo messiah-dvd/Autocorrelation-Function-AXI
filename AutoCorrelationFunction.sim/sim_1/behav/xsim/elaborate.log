@@ -4,6 +4,11 @@ Running: C:/Vitis/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 2df204d23ee
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'AutoCorrelationFunction_v1_0' does not have a parameter named PRECNTSHIFT [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sim_1/imports/src/ACF_AXI_tb.v:164]
+WARNING: [VRFC 10-2861] module 'AutoCorrelationFunction_v1_0' does not have a parameter named MIN_NI_WIDTH [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sim_1/imports/src/ACF_AXI_tb.v:165]
+WARNING: [VRFC 10-2861] module 'AutoCorrelationFunction_v1_0' does not have a parameter named NIBUSWIDTH [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sim_1/imports/src/ACF_AXI_tb.v:166]
+WARNING: [VRFC 10-2861] module 'AutoCorrelationFunction_v1_0' does not have a parameter named NUM_CHANS [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sim_1/imports/src/ACF_AXI_tb.v:167]
+WARNING: [VRFC 10-2861] module 'AutoCorrelationFunction_v1_0' does not have a parameter named S_BLOCKS [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sim_1/imports/src/ACF_AXI_tb.v:168]
 WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'a' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:63]
 WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'a' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:63]
 WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'a' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:63]
@@ -12,8 +17,8 @@ WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl p
 WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'a' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:63]
 WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'a' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:63]
 WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'a' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myMultAdder.sv:63]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addra' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:438]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addrb' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:444]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addra' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:432]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addrb' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/imports/AutoCorrelationFunction_1.0/hdl/AutoCorrelationFunction_v1_0_S00_AXI.v:438]
 WARNING: [VRFC 10-3091] actual bit length 23 differs from formal bit length 24 for port 'A' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myHWCorrelator_PL_top.sv:210]
 WARNING: [VRFC 10-3091] actual bit length 23 differs from formal bit length 24 for port 'B' [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myHWCorrelator_PL_top.sv:211]
 WARNING: [VRFC 10-5021] port 'niRdy' is not connected on this instance [C:/Vitis/Vivado/custom_ip_repo/Autocorrelation-Function-AXI/AutoCorrelationFunction.srcs/sources_1/ip/myHWCorrelator_PL_top_0/src/myHWCorrelator_PL_top.sv:114]
@@ -58,8 +63,8 @@ Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
 Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_DATA_C...
 Compiling module xil_defaultlib.fifo_generator_0
 Compiling module xil_defaultlib.tdc_PL(CNTSIZE=1)
-Compiling module xil_defaultlib.streamToFIFO(S_BLOCKS=19)
-Compiling module xil_defaultlib.binMultiplexer_PL(S_BLOCKS=19)
+Compiling module xil_defaultlib.streamToFIFO(S_BLOCKS=11)
+Compiling module xil_defaultlib.binMultiplexer_PL(S_BLOCKS=11)
 Compiling module xil_defaultlib.tdc_PL(CNTSIZE=35)
 Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=3,CNT_SIZE...
 Compiling module xil_defaultlib.tdc_PL(CNTSIZE=34)
@@ -84,22 +89,6 @@ Compiling module xil_defaultlib.tdc_PL(CNTSIZE=25)
 Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=13,CNT_SIZ...
 Compiling module xil_defaultlib.tdc_PL(CNTSIZE=24)
 Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=14,CNT_SIZ...
-Compiling module xil_defaultlib.tdc_PL(CNTSIZE=23)
-Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=15,CNT_SIZ...
-Compiling module xil_defaultlib.tdc_PL(CNTSIZE=22)
-Compiling module xil_defaultlib.niBlock_s_PL(CNT_SIZE=22)
-Compiling module xil_defaultlib.tdc_PL(CNTSIZE=21)
-Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=17,CNT_SIZ...
-Compiling module xil_defaultlib.tdc_PL(CNTSIZE=20)
-Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=18,CNT_SIZ...
-Compiling module xil_defaultlib.tdc_PL(CNTSIZE=19)
-Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=19,CNT_SIZ...
-Compiling module xil_defaultlib.tdc_PL(CNTSIZE=18)
-Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=20,CNT_SIZ...
-Compiling module xil_defaultlib.tdc_PL(CNTSIZE=17)
-Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=21,CNT_SIZ...
-Compiling module xil_defaultlib.tdc_PL(CNTSIZE=16)
-Compiling module xil_defaultlib.niBlock_s_PL(NI_WIDTH=22,CNT_SIZ...
 Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
 Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
 Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
@@ -130,10 +119,10 @@ Compiling architecture synth of entity xbip_counter_v3_0_6.xbip_counter_v3_0_6_v
 Compiling architecture synth of entity c_counter_binary_v12_0_14.c_counter_binary_v12_0_14_viv [\c_counter_binary_v12_0_14_viv(c...]
 Compiling architecture xilinx of entity c_counter_binary_v12_0_14.c_counter_binary_v12_0_14 [\c_counter_binary_v12_0_14(c_imp...]
 Compiling architecture c_counter_binary_0_arch of entity xil_defaultlib.c_counter_binary_0 [c_counter_binary_0_default]
-Compiling module xil_defaultlib.myHWCorrelator_PL_top_default
+Compiling module xil_defaultlib.myHWCorrelator_PL_top(S_BLOCKS=1...
 Compiling module xil_defaultlib.myHWCorrelator_PL_top_0
 Compiling module xil_defaultlib.AutoCorrelationFunction_v1_0_S00...
-Compiling module xil_defaultlib.AutoCorrelationFunction_v1_0(PRE...
+Compiling module xil_defaultlib.AutoCorrelationFunction_v1_0(C_S...
 Compiling module xil_defaultlib.ACF_AXI_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot ACF_AXI_tb_behav

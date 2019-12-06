@@ -101,7 +101,7 @@
 	// ADDR_LSB = 2 for 32 bits (n downto 2)
 	// ADDR_LSB = 3 for 64 bits (n downto 3)
 	localparam integer ADDR_LSB = (C_S_AXI_DATA_WIDTH/32) + 1;
-	localparam integer OPT_MEM_ADDR_BITS = 2;
+	localparam integer OPT_MEM_ADDR_BITS = 1;
 	//----------------------------------------------
 	//-- Signals for user logic register space example
 	//------------------------------------------------
@@ -216,6 +216,7 @@
 	// These registers are cleared when reset (active low) is applied.
 	// Slave register write enable is asserted when valid address and data are available
 	// and the slave is ready to accept the write address and write data.
+	
 	assign slv_reg_wren = axi_wready && S_AXI_WVALID && axi_awready && S_AXI_AWVALID;
 
 	always @( posedge S_AXI_ACLK )
@@ -230,8 +231,11 @@
 	  else begin
 	    if (slv_reg_wren)
 	      begin
-	        //case ( axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
-	        case ( axi_awaddr[OPT_MEM_ADDR_BITS:0] )
+	        case ( axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] ) // this helps memory map from the PS address to the slave_reg address
+	        // a writeaddr of 4 (0000 0100) will become 1 (01)
+	        // a writeaddr of 8 (0000 1000) will become 2 (10)
+	        // a writeaddr of 12 (0000 1100) will become 3 (11)
+	        
 	          2'h0:
 	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
@@ -322,7 +326,6 @@
 	    begin    
 	      if (~axi_arready && S_AXI_ARVALID)
 	        begin
-	        $display("setting axi_arready");
 	          // indicates that the slave has acceped the valid read address
 	          axi_arready <= 1'b1;
 	          // Read address latching
