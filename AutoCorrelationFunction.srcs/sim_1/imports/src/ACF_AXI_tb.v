@@ -24,9 +24,7 @@ module ACF_AXI_tb #(parameter PRECNTSHIFT = 0, parameter MIN_NI_WIDTH=3,paramete
 );
 
 // IP core custom inputs  
-reg sys_clk,smpl_clk,rst,CH1,CE, initTx;
-reg [CNT_SIZE-1:0] maxCnt;
-wire wrEn,cntFinished;
+reg sys_clk,smpl_clk,rst,CH1,CH,CE, initTx;
 wire [63:0] acfEl;
 reg [CNT_SIZE-1:0] presentTime;
 
@@ -67,14 +65,19 @@ wire read_data_valid;		//slave indicating data in channel is valid
 initial begin
     rst = 1'b1;
     sys_clk = 1'b1;
-    repeat(5) #5 sys_clk = ~sys_clk;
+    repeat(5) #10 sys_clk = ~sys_clk;
     rst = 1'b0;
-    forever #5 sys_clk = ~sys_clk;
+    forever #10 sys_clk = ~sys_clk;
+end
+
+initial begin
+    CH = 0;
+    forever #25 CH = ~CH;
 end
 
 initial begin
     smpl_clk = 1'b1;
-    forever #2.5 smpl_clk = ~smpl_clk;
+    forever #5 smpl_clk = ~smpl_clk;
 end
 
 //main simulation block
@@ -83,10 +86,9 @@ initial begin
     //CH1 = 1'b0;
     //initTx = 1'b0;
     
-    maxCnt = 10000;
     @(negedge rst);
         #205
-        axi_write(32'd0, 32'd10000); // write maxCnt = 10000 to ACF IP
+        axi_write(32'd0, 32'd500); // write maxCnt = 10000 to ACF IP
         axi_write(32'd4, 32'd1); // write CE = 1 to ACF IP
         #10
         CH1 = 1'b1;
@@ -143,7 +145,13 @@ initial begin
         #1000
         axi_write(32'd8, 32'd1); // write initTx = 1
         axi_write(32'd8, 32'd0); // write initTx = 0
-        #14000
+        #8000
+        
+        axi_write(32'd4, 32'd0); // write CE = 0 to ACF IP
+        #20
+        axi_write(32'd4, 32'd1); // write CE = 1 to ACF IP
+        
+        #11000
         
         // Now that the ACF is finished being calculated, start reading it
         read_addr = 0;
@@ -168,7 +176,7 @@ end
         .S_BLOCKS(S_BLOCKS)
 	) DUT (
 		.smpl_clk(smpl_clk),
-		.CH1(CH1),
+		.CH1(CH),
 		.s00_axi_aclk(sys_clk),
 		.s00_axi_aresetn(~rst),
 

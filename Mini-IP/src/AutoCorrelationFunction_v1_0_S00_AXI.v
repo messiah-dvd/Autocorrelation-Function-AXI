@@ -439,7 +439,7 @@
         .ena(acfWrEn),
         // read port
         .clkb(S_AXI_ACLK),
-        .addrb(axi_araddr),
+        .addrb(axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB]),
         .doutb(acfRdData),
         .enb(1'b1)
     );
@@ -469,7 +469,7 @@
     assign initTx = slv_reg2[0];
     assign diag[0] = CE;
     assign diag[1] = initTx;
-    assign diag[2] = acfDataComplete;
+    assign diag[2] = cntFinished;
     assign diag[3] = CH1;
         
     myHWCorrelator_PL_top_0 acf_core (

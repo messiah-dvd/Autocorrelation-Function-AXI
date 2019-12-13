@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="21690001fs"></ZoomEndTime>
-      <Cursor1Time time="21690000fs"></Cursor1Time>
+      <ZoomStartTime time="3723333fs"></ZoomStartTime>
+      <ZoomEndTime time="26063334fs"></ZoomEndTime>
+      <Cursor1Time time="22340000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="179"></NameColumnWidth>
-      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/ACF_AXI_tb/DUT/s00_axi_aclk" type="logic">
       <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
       <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
@@ -79,5 +79,9 @@
    <wvobject fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/dataCount" type="array">
       <obj_property name="ElementShortName">dataCount[31:0]</obj_property>
       <obj_property name="ObjectShortName">dataCount[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ACF_AXI_tb/DUT/AutoCorrelationFunction_v1_0_S00_AXI_inst/cntFinished" type="logic">
+      <obj_property name="ElementShortName">cntFinished</obj_property>
+      <obj_property name="ObjectShortName">cntFinished</obj_property>
    </wvobject>
 </wave_config>
